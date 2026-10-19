@@ -1,0 +1,88 @@
+{
+  "user_question": "基于深度学习的图像压缩感知重建",
+  "cleaned_paper_query": "deep learning image compressed sensing",
+  "cleaned_repo_query": "deep learning image compressed sensing language:Python stars:>10",
+  "live_arxiv": {
+    "ok": true,
+    "elapsed_s": 3.28,
+    "mcp_equivalent_args": {
+      "query": "deep learning image compressed sensing",
+      "max_results": 3
+    },
+    "raw_count": 3,
+    "raw_titles": [
+      "Learning Structured Compressed Sensing with Automatic Resource Allocation",
+      "Learn to Accumulate Evidence from All Training Samples: Theory and Practice",
+      "The Modern Mathematics of Deep Learning"
+    ],
+    "raw_urls": [
+      "https://arxiv.org/abs/2410.18954v2",
+      "https://arxiv.org/abs/2306.11113v2",
+      "https://arxiv.org/abs/2105.04026v2"
+    ],
+    "accepted": [
+      {
+        "id": "paper-2410.18954v2",
+        "title": "Learning Structured Compressed Sensing with Automatic Resource Allocation",
+        "url": "https://arxiv.org/abs/2410.18954v2",
+        "score": 14.25
+      },
+      {
+        "id": "paper-2105.04026v2",
+        "title": "The Modern Mathematics of Deep Learning",
+        "url": "https://arxiv.org/abs/2105.04026v2",
+        "score": 4.8
+      }
+    ],
+    "rejected_count": 1
+  },
+  "live_github": {
+    "ok": true,
+    "elapsed_s": 0.91,
+    "search_query": "deep learning image compressed sensing language:Python stars:>10",
+    "raw": [
+      {
+        "repository": "lixing0810/Pytorch_ADMM-CSNet",
+        "source_url": "https://github.com/lixing0810/Pytorch_ADMM-CSNet",
+        "description": "Codes for model in \"ADMM-CSNet: A Deep Learning Approach for Image Compressive Sensing\" (TPAMI 2019)",
+        "stars": 33,
+        "language": "Python"
+      },
+      {
+        "repository": "nmduc/deep-ternary",
+        "source_url": "https://github.com/nmduc/deep-ternary",
+        "description": "Source code for the paper \"Deep Learning Sparse Ternary Projections For Compressed Sensing of Images\"",
+        "stars": 19,
+        "language": "Python"
+      }
+    ],
+    "accepted": [
+      {
+        "evidence_id": "repo-lixing0810-Pytorch_ADMM-CSNet",
+        "repository": "lixing0810/Pytorch_ADMM-CSNet",
+        "description": "Codes for model in \"ADMM-CSNet: A Deep Learning Approach for Image Compressive Sensing\" (TPAMI 2019)",
+        "architecture_summary": "Codes for model in \"ADMM-CSNet: A Deep Learning Approach for Image Compressive Sensing\" (TPAMI 2019)",
+        "source_url": "https://github.com/lixing0810/Pytorch_ADMM-CSNet",
+        "relevance_score": 4.0,
+        "relevance_signals": [
+          "abstract_phrase:deep learning"
+        ],
+        "relevance_accepted": true
+      },
+      {
+        "evidence_id": "repo-nmduc-deep-ternary",
+        "repository": "nmduc/deep-ternary",
+        "description": "Source code for the paper \"Deep Learning Sparse Ternary Projections For Compressed Sensing of Images\"",
+        "architecture_summary": "Source code for the paper \"Deep Learning Sparse Ternary Projections For Compressed Sensing of Images\"",
+        "source_url": "https://github.com/nmduc/deep-ternary",
+        "relevance_score": 5.3,
+        "relevance_signals": [
+          "abstract_phrase:deep learning"
+        ],
+        "relevance_accepted": true
+      }
+    ],
+    "rejected_count": 0
+  },
+  "notes": []
+}

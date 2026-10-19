@@ -1,0 +1,36 @@
+{
+  "items": [
+    {
+      "evidence_id": "paper-2312.10997v5",
+      "kind": "paper",
+      "title": "Retrieval-Augmented Generation for Large Language Models: A Survey",
+      "url": "https://arxiv.org/abs/2312.10997v5",
+      "accessed_at": "2026-07-21",
+      "verification_status": "verified"
+    },
+    {
+      "evidence_id": "paper-2601.05264v1",
+      "kind": "paper",
+      "title": "Engineering the RAG Stack: A Comprehensive Review of the Architecture and Trust Frameworks for Retrieval-Augmented Generation Systems",
+      "url": "https://arxiv.org/abs/2601.05264v1",
+      "accessed_at": "2026-07-21",
+      "verification_status": "verified"
+    },
+    {
+      "evidence_id": "paper-2404.07220v2",
+      "kind": "paper",
+      "title": "Blended RAG: Improving RAG (Retriever-Augmented Generation) Accuracy with Semantic Search and Hybrid Query-Based Retrievers",
+      "url": "https://arxiv.org/abs/2404.07220v2",
+      "accessed_at": "2026-07-21",
+      "verification_status": "verified"
+    },
+    {
+      "evidence_id": "repo-langchain-ai-langchain",
+      "kind": "repository",
+      "title": "LangChain: The agent engineering platform",
+      "url": "https://github.com/langchain-ai/langchain",
+      "accessed_at": "2026-07-21",
+      "verification_status": "verified"
+    }
+  ]
+}

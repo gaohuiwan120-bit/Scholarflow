@@ -1,0 +1,716 @@
+{
+  "ts": "2026-10-19T06:11:17.414779+00:00",
+  "steps": {
+    "health": {
+      "status": "ok",
+      "service": "scholarflow-api",
+      "version": "0.1.0",
+      "runtime": "multi",
+      "runtimes": [
+        "rag_v1",
+        "research_graph_v1"
+      ],
+      "harness_importable": true,
+      "artifacts_dir_exists": true,
+      "langgraph_available": true,
+      "sandbox_available": true,
+      "sandbox_docker": false,
+      "llm_configured": true,
+      "llm_model": "deepseek-chat",
+      "llm_provider": "deepseek"
+    },
+    "mcp_overview": {
+      "ok": true,
+      "repository": "jianzhangcs/ISTA-Net-PyTorch",
+      "description": "ISTA-Net: Interpretable Optimization-Inspired Deep Network for Image Compressive Sensing, CVPR2018 (PyTorch Code)",
+      "stars": 303
+    }
+  },
+  "elapsed_s": 15.04,
+  "task_id": "sf-5646633c88b8",
+  "create": {
+    "task_id": "sf-5646633c88b8",
+    "status": "running",
+    "kind": "research_orchestration",
+    "created_at": "2026-10-19T06:11:23.769328Z"
+  },
+  "status_poll": {
+    "status": "succeeded",
+    "error": null,
+    "terminal": true
+  },
+  "result_summary": {
+    "status": "succeeded",
+    "overall_status": "succeeded",
+    "review_decision": "pass",
+    "data_mode": "live",
+    "effective_data_mode": "live",
+    "degradation_events": []
+  },
+  "search_queries": [
+    "deep learning image compressed sensing",
+    "deep learning image compressed sensing reconstruction",
+    "image compressive sensing deep learning"
+  ],
+  "code_search_queries": [
+    "image compressive sensing ISTA-Net language:Python stars:>10"
+  ],
+  "resolve_meta": {
+    "candidates": [
+      {
+        "repository": "jianzhangcs/ISTA-Net-PyTorch",
+        "source_url": "https://github.com/jianzhangcs/ISTA-Net-PyTorch",
+        "description": "ISTA-Net: Interpretable Optimization-Inspired Deep Network for Image Compressive Sensing, CVPR2018 (PyTorch Code)",
+        "stars": 303,
+        "language": "Python"
+      },
+      {
+        "repository": "jianzhangcs/ISTA-Net",
+        "source_url": "https://github.com/jianzhangcs/ISTA-Net",
+        "description": "ISTA-Net: Interpretable Optimization-Inspired Deep Network for Image Compressive Sensing, CVPR2018 (Tensorflow Code)",
+        "stars": 149,
+        "language": "Python"
+      }
+    ],
+    "selected": "jianzhangcs/ISTA-Net-PyTorch",
+    "method": "topic_hint+github_search",
+    "rejected_preview": []
+  },
+  "paper_tiers": [
+    {
+      "evidence_id": "paper-2207.06746v1",
+      "title": "Single-Pixel Image Reconstruction Based on Block Compressive Sensing and Deep Learning",
+      "source_url": "https://arxiv.org/abs/2207.06746v1",
+      "relevance_tier": "core",
+      "relevance_signals": [
+        "title_phrase:deep learning",
+        "strong_title_terms:1",
+        "title_phrase:compressed/compressive sensing",
+        "tier:core_image_cs_reconstruction"
+      ]
+    },
+    {
+      "evidence_id": "paper-0812.3137v1",
+      "title": "Compressive sensing: a paradigm shift in signal processing",
+      "source_url": "https://arxiv.org/abs/0812.3137v1",
+      "relevance_tier": "core",
+      "relevance_signals": [
+        "strong_title_terms:1",
+        "title_phrase:compressed/compressive sensing",
+        "tier_signal:image+cs+recon_or_network",
+        "tier:core_image_cs_reconstruction"
+      ]
+    },
+    {
+      "evidence_id": "paper-2301.02033v1",
+      "title": "Physics-informed self-supervised deep learning reconstruction for accelerated first-pass perfusion cardiac MRI",
+      "source_url": "https://arxiv.org/abs/2301.02033v1",
+      "relevance_tier": "supporting",
+      "relevance_signals": [
+        "title_phrase:deep learning",
+        "abstract_phrase:compressed/compressive sensing",
+        "tier_signal:image+cs+recon_or_network",
+        "tier:supporting_domain_cs_not_natural_image"
+      ]
+    },
+    {
+      "evidence_id": "paper-1907.11711v1",
+      "title": "Deep MRI Reconstruction: Unrolled Optimization Algorithms Meet Neural Networks",
+      "source_url": "https://arxiv.org/abs/1907.11711v1",
+      "relevance_tier": "supporting",
+      "relevance_signals": [
+        "abstract_phrase:deep learning",
+        "penalty:weak_terms_without_strong",
+        "tier:supporting_sparse_or_generic_cs"
+      ]
+    }
+  ],
+  "repo_tiers": [
+    {
+      "evidence_id": "repo-jianzhangcs-ISTA-Net-PyTorch",
+      "repository": "jianzhangcs/ISTA-Net-PyTorch",
+      "source_url": "https://github.com/jianzhangcs/ISTA-Net-PyTorch",
+      "description": "ISTA-Net: Interpretable Optimization-Inspired Deep Network for Image Compressive Sensing, CVPR2018 (PyTorch Code)",
+      "relevance_tier": "core",
+      "relevance_signals": [
+        "strong_title_terms:1",
+        "title_phrase:compressed/compressive sensing",
+        "accept:repo_cs_markers"
+      ]
+    }
+  ],
+  "parallel": {
+    "paper_started_at": 1792390283.8494494,
+    "paper_ended_at": 1792390291.89287,
+    "paper_duration_ms": 8043,
+    "repo_started_at": 1792390283.8504546,
+    "repo_ended_at": 1792390293.3926983,
+    "repo_duration_ms": 9542,
+    "started_same_second": true,
+    "time_ranges_overlap": true,
+    "paper_data_source": "live_mcp",
+    "repo_data_source": "live_mcp",
+    "paper_status": "succeeded",
+    "repo_status": "succeeded",
+    "paper_summary": "Collected 4 papers (live_mcp); core=2 supporting=2; query='image compressive sensing deep learning reconstruction'; rejected=8",
+    "repo_summary": "Collected 1 repositories (live_mcp); query='image compressive sensing ISTA-Net language:Python stars:>10'; selected=jianzhangcs/ISTA-Net-PyTorch",
+    "repo_error": null,
+    "paper_error": null
+  },
+  "subtasks": [
+    {
+      "subtask_id": "sf-5646633c88b8-orchestrator",
+      "role": "orchestrator",
+      "status": "succeeded",
+      "depends_on": [],
+      "started_at": 1792390283.8493428,
+      "ended_at": 1792390283.8493428,
+      "duration_ms": 0,
+      "error": null,
+      "summary": "Planned workflow_mode=research_orchestration",
+      "data_source": "deterministic"
+    },
+    {
+      "subtask_id": "sf-5646633c88b8-paper",
+      "role": "paper_research",
+      "status": "succeeded",
+      "depends_on": [],
+      "started_at": 1792390283.8494494,
+      "ended_at": 1792390291.89287,
+      "duration_ms": 8043,
+      "error": null,
+      "summary": "Collected 4 papers (live_mcp); core=2 supporting=2; query='image compressive sensing deep learning reconstruction'; rejected=8",
+      "data_source": "live_mcp"
+    },
+    {
+      "subtask_id": "sf-5646633c88b8-repo",
+      "role": "repository_analysis",
+      "status": "succeeded",
+      "depends_on": [],
+      "started_at": 1792390283.8504546,
+      "ended_at": 1792390293.3926983,
+      "duration_ms": 9542,
+      "error": null,
+      "summary": "Collected 1 repositories (live_mcp); query='image compressive sensing ISTA-Net language:Python stars:>10'; selected=jianzhangcs/ISTA-Net-PyTorch",
+      "data_source": "live_mcp"
+    },
+    {
+      "subtask_id": "sf-5646633c88b8-experiment",
+      "role": "experiment_design",
+      "status": "succeeded",
+      "depends_on": [
+        "paper_research",
+        "repository_analysis"
+      ],
+      "started_at": 1792390293.3937998,
+      "ended_at": 1792390293.3948107,
+      "duration_ms": 1,
+      "error": null,
+      "summary": "Built experiment plan from upstream evidence",
+      "data_source": "deterministic"
+    },
+    {
+      "subtask_id": "sf-5646633c88b8-review",
+      "role": "review",
+      "status": "succeeded",
+      "depends_on": [
+        "experiment_design"
+      ],
+      "started_at": 1792390293.3948107,
+      "ended_at": 1792390293.3968053,
+      "duration_ms": 1,
+      "error": null,
+      "summary": "decision=pass; claims=5",
+      "data_source": "deterministic"
+    },
+    {
+      "subtask_id": "sf-5646633c88b8-assemble",
+      "role": "assemble",
+      "status": "succeeded",
+      "depends_on": [
+        "review"
+      ],
+      "started_at": 1792390293.3978088,
+      "ended_at": 1792390295.3953104,
+      "duration_ms": 1997,
+      "error": null,
+      "summary": "Built 9 artifacts (live_mcp)",
+      "data_source": "live_mcp"
+    }
+  ],
+  "mcp_calls": [
+    {
+      "tool": "search_academic_papers",
+      "ok": true,
+      "duration_ms": 3192,
+      "input_summary": {
+        "query": "deep learning image compressed sensing",
+        "max_results": 12,
+        "_attempts": 1
+      },
+      "error": null
+    },
+    {
+      "tool": "search_academic_papers",
+      "ok": true,
+      "duration_ms": 4840,
+      "input_summary": {
+        "query": "image compressive sensing deep learning reconstruction",
+        "max_results": 12,
+        "_attempts": 1
+      },
+      "error": null
+    },
+    {
+      "tool": "get_repository_overview",
+      "ok": true,
+      "duration_ms": 8406,
+      "input_summary": {
+        "repository": "jianzhangcs/ISTA-Net-PyTorch",
+        "_attempts": 1
+      },
+      "error": null
+    },
+    {
+      "tool": "assemble_task_artifacts",
+      "ok": true,
+      "duration_ms": 1943,
+      "input_summary": {
+        "_attempts": 1
+      },
+      "error": null
+    }
+  ],
+  "experiment": {
+    "upstream_paper_ids": [
+      "paper-2207.06746v1",
+      "paper-0812.3137v1"
+    ],
+    "upstream_supporting_paper_ids": [
+      "paper-2301.02033v1",
+      "paper-1907.11711v1"
+    ],
+    "upstream_repo_ids": [
+      "repo-jianzhangcs-ISTA-Net-PyTorch"
+    ],
+    "baselines": [
+      "Literature baseline from CORE: Single-Pixel Image Reconstruction Based on Block Compressive Sensing and Deep Learning",
+      "Classical / simplified reconstruction baseline (matched sampling rate)"
+    ],
+    "hypotheses": [
+      "Deep CS reconstruction from CORE literature improves PSNR/SSIM vs classical CS baselines for: deep learning image compressed sensing",
+      "Open implementation (jianzhangcs/ISTA-Net-PyTorch) can reproduce reported trends under matched sampling rates"
+    ]
+  },
+  "reviews": [
+    {
+      "claim": "Core papers are topically related to: deep learning image compressed sensing",
+      "related_evidence_ids": [
+        "paper-2207.06746v1",
+        "paper-0812.3137v1"
+      ],
+      "status": "supported",
+      "reason": "Linked evidence present and matches required relevance tier",
+      "recommended_action": "Proceed with caution; review remains rule-based (not LLM judge)"
+    },
+    {
+      "claim": "Core paper contributes to the topic: Single-Pixel Image Reconstruction Based on Block Compressive Sensing and Deep Learning",
+      "related_evidence_ids": [
+        "paper-2207.06746v1"
+      ],
+      "status": "supported",
+      "reason": "Linked evidence present and matches required relevance tier",
+      "recommended_action": "Proceed with caution; review remains rule-based (not LLM judge)"
+    },
+    {
+      "claim": "Core paper contributes to the topic: Compressive sensing: a paradigm shift in signal processing",
+      "related_evidence_ids": [
+        "paper-0812.3137v1"
+      ],
+      "status": "supported",
+      "reason": "Linked evidence present and matches required relevance tier",
+      "recommended_action": "Proceed with caution; review remains rule-based (not LLM judge)"
+    },
+    {
+      "claim": "Supporting papers are background only (not core) for: deep learning image compressed sensing",
+      "related_evidence_ids": [
+        "paper-2301.02033v1",
+        "paper-1907.11711v1"
+      ],
+      "status": "supported",
+      "reason": "Linked evidence present and matches required relevance tier",
+      "recommended_action": "Proceed with caution; review remains rule-based (not LLM judge)"
+    },
+    {
+      "claim": "Repository evidence is related to: deep learning image compressed sensing",
+      "related_evidence_ids": [
+        "repo-jianzhangcs-ISTA-Net-PyTorch"
+      ],
+      "status": "supported",
+      "reason": "Linked evidence present and matches required relevance tier",
+      "recommended_action": "Proceed with caution; review remains rule-based (not LLM judge)"
+    }
+  ],
+  "rag_slogan_claims": [],
+  "artifacts_api": {
+    "task_id": "sf-5646633c88b8",
+    "created_at": "2026-10-19T06:11:35.358321+00:00",
+    "data_mode": "live",
+    "overwrite_policy": "replace",
+    "artifacts": [
+      {
+        "artifact_id": "sf-5646633c88b8:research_report.md",
+        "artifact_type": "md",
+        "filename": "research_report.md",
+        "path": "E:\\AgentProject\\deepflow_project\\apps\\scholarflow-api\\data\\tasks\\sf-5646633c88b8\\artifacts\\research_report.md",
+        "created_at": "2026-10-19T06:11:35.358321+00:00",
+        "data_mode": "live",
+        "schema_valid": null,
+        "schema_error": null,
+        "size_bytes": 5770,
+        "evidence_refs": [
+          "paper-2207.06746v1",
+          "paper-0812.3137v1",
+          "paper-2301.02033v1",
+          "paper-1907.11711v1",
+          "repo-jianzhangcs-ISTA-Net-PyTorch"
+        ]
+      },
+      {
+        "artifact_id": "sf-5646633c88b8:research_plan.json",
+        "artifact_type": "json",
+        "filename": "research_plan.json",
+        "path": "E:\\AgentProject\\deepflow_project\\apps\\scholarflow-api\\data\\tasks\\sf-5646633c88b8\\artifacts\\research_plan.json",
+        "created_at": "2026-10-19T06:11:35.358321+00:00",
+        "data_mode": "live",
+        "schema_valid": true,
+        "schema_error": null,
+        "size_bytes": 1008,
+        "evidence_refs": [
+          "paper-2207.06746v1",
+          "paper-0812.3137v1",
+          "paper-2301.02033v1",
+          "paper-1907.11711v1",
+          "repo-jianzhangcs-ISTA-Net-PyTorch"
+        ]
+      },
+      {
+        "artifact_id": "sf-5646633c88b8:paper_evidence.json",
+        "artifact_type": "json",
+        "filename": "paper_evidence.json",
+        "path": "E:\\AgentProject\\deepflow_project\\apps\\scholarflow-api\\data\\tasks\\sf-5646633c88b8\\artifacts\\paper_evidence.json",
+        "created_at": "2026-10-19T06:11:35.358321+00:00",
+        "data_mode": "live",
+        "schema_valid": true,
+        "schema_error": null,
+        "size_bytes": 8744,
+        "evidence_refs": [
+          "paper-2207.06746v1",
+          "paper-0812.3137v1",
+          "paper-2301.02033v1",
+          "paper-1907.11711v1",
+          "repo-jianzhangcs-ISTA-Net-PyTorch"
+        ]
+      },
+      {
+        "artifact_id": "sf-5646633c88b8:paper_matrix.csv",
+        "artifact_type": "csv",
+        "filename": "paper_matrix.csv",
+        "path": "E:\\AgentProject\\deepflow_project\\apps\\scholarflow-api\\data\\tasks\\sf-5646633c88b8\\artifacts\\paper_matrix.csv",
+        "created_at": "2026-10-19T06:11:35.358321+00:00",
+        "data_mode": "live",
+        "schema_valid": null,
+        "schema_error": null,
+        "size_bytes": 6854,
+        "evidence_refs": [
+          "paper-2207.06746v1",
+          "paper-0812.3137v1",
+          "paper-2301.02033v1",
+          "paper-1907.11711v1",
+          "repo-jianzhangcs-ISTA-Net-PyTorch"
+        ]
+      },
+      {
+        "artifact_id": "sf-5646633c88b8:repository_evidence.json",
+        "artifact_type": "json",
+        "filename": "repository_evidence.json",
+        "path": "E:\\AgentProject\\deepflow_project\\apps\\scholarflow-api\\data\\tasks\\sf-5646633c88b8\\artifacts\\repository_evidence.json",
+        "created_at": "2026-10-19T06:11:35.358321+00:00",
+        "data_mode": "live",
+        "schema_valid": true,
+        "schema_error": null,
+        "size_bytes": 3296,
+        "evidence_refs": [
+          "paper-2207.06746v1",
+          "paper-0812.3137v1",
+          "paper-2301.02033v1",
+          "paper-1907.11711v1",
+          "repo-jianzhangcs-ISTA-Net-PyTorch"
+        ]
+      },
+      {
+        "artifact_id": "sf-5646633c88b8:repository_matrix.csv",
+        "artifact_type": "csv",
+        "filename": "repository_matrix.csv",
+        "path": "E:\\AgentProject\\deepflow_project\\apps\\scholarflow-api\\data\\tasks\\sf-5646633c88b8\\artifacts\\repository_matrix.csv",
+        "created_at": "2026-10-19T06:11:35.358321+00:00",
+        "data_mode": "live",
+        "schema_valid": null,
+        "schema_error": null,
+        "size_bytes": 2758,
+        "evidence_refs": [
+          "paper-2207.06746v1",
+          "paper-0812.3137v1",
+          "paper-2301.02033v1",
+          "paper-1907.11711v1",
+          "repo-jianzhangcs-ISTA-Net-PyTorch"
+        ]
+      },
+      {
+        "artifact_id": "sf-5646633c88b8:experiment_plan.md",
+        "artifact_type": "md",
+        "filename": "experiment_plan.md",
+        "path": "E:\\AgentProject\\deepflow_project\\apps\\scholarflow-api\\data\\tasks\\sf-5646633c88b8\\artifacts\\experiment_plan.md",
+        "created_at": "2026-10-19T06:11:35.358321+00:00",
+        "data_mode": "live",
+        "schema_valid": null,
+        "schema_error": null,
+        "size_bytes": 2252,
+        "evidence_refs": [
+          "paper-2207.06746v1",
+          "paper-0812.3137v1",
+          "paper-2301.02033v1",
+          "paper-1907.11711v1",
+          "repo-jianzhangcs-ISTA-Net-PyTorch"
+        ]
+      },
+      {
+        "artifact_id": "sf-5646633c88b8:evidence_review.json",
+        "artifact_type": "json",
+        "filename": "evidence_review.json",
+        "path": "E:\\AgentProject\\deepflow_project\\apps\\scholarflow-api\\data\\tasks\\sf-5646633c88b8\\artifacts\\evidence_review.json",
+        "created_at": "2026-10-19T06:11:35.358321+00:00",
+        "data_mode": "live",
+        "schema_valid": true,
+        "schema_error": null,
+        "size_bytes": 2071,
+        "evidence_refs": [
+          "paper-2207.06746v1",
+          "paper-0812.3137v1",
+          "paper-2301.02033v1",
+          "paper-1907.11711v1",
+          "repo-jianzhangcs-ISTA-Net-PyTorch"
+        ]
+      },
+      {
+        "artifact_id": "sf-5646633c88b8:sources.json",
+        "artifact_type": "json",
+        "filename": "sources.json",
+        "path": "E:\\AgentProject\\deepflow_project\\apps\\scholarflow-api\\data\\tasks\\sf-5646633c88b8\\artifacts\\sources.json",
+        "created_at": "2026-10-19T06:11:35.358321+00:00",
+        "data_mode": "live",
+        "schema_valid": true,
+        "schema_error": null,
+        "size_bytes": 1490,
+        "evidence_refs": [
+          "paper-2207.06746v1",
+          "paper-0812.3137v1",
+          "paper-2301.02033v1",
+          "paper-1907.11711v1",
+          "repo-jianzhangcs-ISTA-Net-PyTorch"
+        ]
+      }
+    ]
+  },
+  "artifacts_content": {
+    "research_report.md": {
+      "exists": true,
+      "bytes": 5770,
+      "preview": "# image compressed sensing | ## Objective | 基于深度学习的图像压缩感知重建 | ## Research Questions | - What methods and open implementations advance: image compressed sensing? | ## Key Paper Findings | ### Single-Pixel Image Reconstruction Based on Block Compressive Sensing and Deep Learning | - Single-pixel imaging (SPI) is a novel imaging technique whose working principle is",
+      "has_hybrid_rag": false
+    },
+    "research_plan.json": {
+      "exists": true,
+      "bytes": 1008,
+      "preview": "{ |   \"task_id\": \"sf-5646633c88b8\", |   \"title\": \"image compressed sensing\", |   \"objective\": \"基于深度学习的图像压缩感知重建\", |   \"research_questions\": [ |     \"What methods and open implementations advance: image compressed sensing?\" |   ], |   \"search_queries\": [ |     \"deep learning image compressed sensing\", |     \"deep learning image compressed sensing reconstruction\", |     ",
+      "has_hybrid_rag": false,
+      "search_queries": [
+        "deep learning image compressed sensing",
+        "deep learning image compressed sensing reconstruction",
+        "image compressive sensing deep learning"
+      ],
+      "code_search_queries": [
+        "image compressive sensing ISTA-Net language:Python stars:>10"
+      ],
+      "title": "image compressed sensing"
+    },
+    "paper_evidence.json": {
+      "exists": true,
+      "bytes": 8744,
+      "preview": "{ |   \"items\": [ |     { |       \"evidence_id\": \"paper-2207.06746v1\", |       \"title\": \"Single-Pixel Image Reconstruction Based on Block Compressive Sensing and Deep Learning\", |       \"authors\": [ |         \"Stephen L. H. Lau\", |         \"Edwin K. P. Chong\" |       ], |       \"year\": 2022, |       \"venue\": null, |       \"identifier\": \"2207.06746v1\", |       \"source_url\":",
+      "has_hybrid_rag": false,
+      "items_n": 4,
+      "papers": [
+        {
+          "evidence_id": "paper-2207.06746v1",
+          "title": "Single-Pixel Image Reconstruction Based on Block Compressive Sensing and Deep Learning",
+          "source_url": "https://arxiv.org/abs/2207.06746v1",
+          "tier_tag": "relevance_tier=core; title_phrase:deep learning; strong_title_terms:1; title_phrase:compressed/compressive sensing; tier:core_image_cs_reconstruction"
+        },
+        {
+          "evidence_id": "paper-0812.3137v1",
+          "title": "Compressive sensing: a paradigm shift in signal processing",
+          "source_url": "https://arxiv.org/abs/0812.3137v1",
+          "tier_tag": "relevance_tier=core; strong_title_terms:1; title_phrase:compressed/compressive sensing; tier_signal:image+cs+recon_or_network; tier:core_image_cs_reconstruction"
+        },
+        {
+          "evidence_id": "paper-2301.02033v1",
+          "title": "Physics-informed self-supervised deep learning reconstruction for accelerated first-pass perfusion c",
+          "source_url": "https://arxiv.org/abs/2301.02033v1",
+          "tier_tag": "relevance_tier=supporting; title_phrase:deep learning; abstract_phrase:compressed/compressive sensing; tier_signal:image+cs+recon_or_network; tier:supporting_domain_cs_not_natural_image"
+        },
+        {
+          "evidence_id": "paper-1907.11711v1",
+          "title": "Deep MRI Reconstruction: Unrolled Optimization Algorithms Meet Neural Networks",
+          "source_url": "https://arxiv.org/abs/1907.11711v1",
+          "tier_tag": "relevance_tier=supporting; abstract_phrase:deep learning; penalty:weak_terms_without_strong; tier:supporting_sparse_or_generic_cs"
+        }
+      ]
+    },
+    "paper_matrix.csv": {
+      "exists": true,
+      "bytes": 6854,
+      "preview": "evidence_id,title,year,venue,research_problem,methodology,datasets,metrics,key_findings,limitations,evidence_level,verification_status,source_url | paper-2207.06746v1,Single-Pixel Image Reconstruction Based on Block Compressive Sensing and Deep Learning,2022,,\"Single-pixel imaging (SPI) is a novel imaging technique whose working principle is based on",
+      "has_hybrid_rag": false
+    },
+    "repository_evidence.json": {
+      "exists": true,
+      "bytes": 3296,
+      "preview": "{ |   \"items\": [ |     { |       \"evidence_id\": \"repo-jianzhangcs-ISTA-Net-PyTorch\", |       \"repository\": \"jianzhangcs/ISTA-Net-PyTorch\", |       \"source_url\": \"https://github.com/jianzhangcs/ISTA-Net-PyTorch\", |       \"description\": \"ISTA-Net: Interpretable Optimization-Inspired Deep Network for Image Compressive Sensing, CVPR2018 (PyTorch Code)\", |       \"lan",
+      "has_hybrid_rag": false,
+      "items_n": 1,
+      "repos": [
+        {
+          "evidence_id": "repo-jianzhangcs-ISTA-Net-PyTorch",
+          "repository": "jianzhangcs/ISTA-Net-PyTorch",
+          "source_url": "https://github.com/jianzhangcs/ISTA-Net-PyTorch",
+          "description": "ISTA-Net: Interpretable Optimization-Inspired Deep Network for Image Compressive Sensing, CVPR2018 (PyTorch Code)"
+        }
+      ]
+    },
+    "repository_matrix.csv": {
+      "exists": true,
+      "bytes": 2758,
+      "preview": "evidence_id,repository,language,framework,architecture_summary,key_modules,installation_summary,reproducibility_notes,limitations,verification_status,source_url | repo-jianzhangcs-ISTA-Net-PyTorch,jianzhangcs/ISTA-Net-PyTorch,Python,Python; Shell,\"# ISTA-Net: Interpretable Optimization-Inspired Deep Network for Image Compressive Sensing [PyTorch vers",
+      "has_hybrid_rag": false
+    },
+    "experiment_plan.md": {
+      "exists": true,
+      "bytes": 2252,
+      "preview": "# Experiment Plan | ## Objective | 基于深度学习的图像压缩感知重建 | ## Hypotheses | - Deep CS reconstruction from CORE literature improves PSNR/SSIM vs classical CS baselines for: deep learning image compressed sensing | - Open implementation (jianzhangcs/ISTA-Net-PyTorch) can reproduce reported trends under matched sampling rates | ## Datasets | - Set11 / BSD68-style natural ",
+      "has_hybrid_rag": false,
+      "mentions_ista": true,
+      "mentions_core": true,
+      "mentions_supporting_as_background": true
+    },
+    "evidence_review.json": {
+      "exists": true,
+      "bytes": 2071,
+      "preview": "{ |   \"items\": [ |     { |       \"claim\": \"Core papers are topically related to: deep learning image compressed sensing\", |       \"related_evidence_ids\": [ |         \"paper-2207.06746v1\", |         \"paper-0812.3137v1\" |       ], |       \"status\": \"supported\", |       \"reason\": \"Linked evidence present and matches required relevance tier\", |       \"recommended_action\":",
+      "has_hybrid_rag": false,
+      "items_n": 5,
+      "reviews": [
+        {
+          "claim": "Core papers are topically related to: deep learning image compressed sensing",
+          "status": "supported",
+          "related_evidence_ids": [
+            "paper-2207.06746v1",
+            "paper-0812.3137v1"
+          ]
+        },
+        {
+          "claim": "Core paper contributes to the topic: Single-Pixel Image Reconstruction Based on Block Compressive Sensing and Deep Learning",
+          "status": "supported",
+          "related_evidence_ids": [
+            "paper-2207.06746v1"
+          ]
+        },
+        {
+          "claim": "Core paper contributes to the topic: Compressive sensing: a paradigm shift in signal processing",
+          "status": "supported",
+          "related_evidence_ids": [
+            "paper-0812.3137v1"
+          ]
+        },
+        {
+          "claim": "Supporting papers are background only (not core) for: deep learning image compressed sensing",
+          "status": "supported",
+          "related_evidence_ids": [
+            "paper-2301.02033v1",
+            "paper-1907.11711v1"
+          ]
+        },
+        {
+          "claim": "Repository evidence is related to: deep learning image compressed sensing",
+          "status": "supported",
+          "related_evidence_ids": [
+            "repo-jianzhangcs-ISTA-Net-PyTorch"
+          ]
+        }
+      ]
+    },
+    "sources.json": {
+      "exists": true,
+      "bytes": 1490,
+      "preview": "{ |   \"items\": [ |     { |       \"evidence_id\": \"paper-2207.06746v1\", |       \"kind\": \"paper\", |       \"title\": \"Single-Pixel Image Reconstruction Based on Block Compressive Sensing and Deep Learning\", |       \"url\": \"https://arxiv.org/abs/2207.06746v1\", |       \"accessed_at\": null, |       \"verification_status\": \"verified\" |     }, |     { |       \"evidence_id\": \"paper",
+      "has_hybrid_rag": false,
+      "items_n": 5,
+      "sources": [
+        {
+          "evidence_id": "paper-2207.06746v1",
+          "url": "https://arxiv.org/abs/2207.06746v1",
+          "kind": "paper"
+        },
+        {
+          "evidence_id": "paper-0812.3137v1",
+          "url": "https://arxiv.org/abs/0812.3137v1",
+          "kind": "paper"
+        },
+        {
+          "evidence_id": "paper-2301.02033v1",
+          "url": "https://arxiv.org/abs/2301.02033v1",
+          "kind": "paper"
+        },
+        {
+          "evidence_id": "paper-1907.11711v1",
+          "url": "https://arxiv.org/abs/1907.11711v1",
+          "kind": "paper"
+        },
+        {
+          "evidence_id": "repo-jianzhangcs-ISTA-Net-PyTorch",
+          "url": "https://github.com/jianzhangcs/ISTA-Net-PyTorch",
+          "kind": "repository"
+        }
+      ]
+    }
+  },
+  "acceptance_gates": {
+    "health_ok": true,
+    "mcp_ok": true,
+    "live_only": true,
+    "papers_live": true,
+    "repos_live": true,
+    "parallel_ok": true,
+    "has_core_papers": true,
+    "has_core_repo": true,
+    "no_rag_slogan": true,
+    "nine_artifacts": true,
+    "overall_succeeded": true,
+    "review_pass": true,
+    "theme_cs_papers": true,
+    "theme_cs_repo": true,
+    "experiment_core_upstream": true,
+    "search_error_clear": true
+  },
+  "verdict": "PASS"
+}

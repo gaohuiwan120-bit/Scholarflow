@@ -1,0 +1,447 @@
+{
+  "version": "agent-bench-v1",
+  "tasks": {
+    "off-01": {
+      "outcome": "succeeded",
+      "status": "partial_succeeded",
+      "artifact_count": 10,
+      "schema_ok": true,
+      "subtask_roles": [
+        "assemble",
+        "orchestrator",
+        "paper_research",
+        "review"
+      ],
+      "need_mcp_fallback": false,
+      "sandbox_status": null,
+      "expect_outcome": "succeeded"
+    },
+    "off-02": {
+      "outcome": "succeeded",
+      "status": "partial_succeeded",
+      "artifact_count": 10,
+      "schema_ok": true,
+      "subtask_roles": [
+        "assemble",
+        "orchestrator",
+        "repository_analysis",
+        "review"
+      ],
+      "need_mcp_fallback": false,
+      "sandbox_status": null,
+      "expect_outcome": "succeeded"
+    },
+    "off-03": {
+      "outcome": "succeeded",
+      "status": "succeeded",
+      "artifact_count": 10,
+      "schema_ok": true,
+      "subtask_roles": [
+        "assemble",
+        "experiment_design",
+        "orchestrator",
+        "paper_research",
+        "repository_analysis",
+        "review"
+      ],
+      "need_mcp_fallback": false,
+      "sandbox_status": null,
+      "expect_outcome": "succeeded"
+    },
+    "off-04": {
+      "outcome": "succeeded",
+      "status": "succeeded",
+      "artifact_count": 10,
+      "schema_ok": true,
+      "subtask_roles": [
+        "assemble",
+        "experiment_design",
+        "orchestrator",
+        "paper_research",
+        "repository_analysis",
+        "review"
+      ],
+      "need_mcp_fallback": false,
+      "sandbox_status": null,
+      "expect_outcome": "succeeded"
+    },
+    "off-05": {
+      "outcome": "succeeded",
+      "status": "succeeded",
+      "artifact_count": 10,
+      "schema_ok": true,
+      "subtask_roles": [
+        "assemble",
+        "experiment_design",
+        "orchestrator",
+        "paper_research",
+        "repository_analysis",
+        "review"
+      ],
+      "need_mcp_fallback": false,
+      "sandbox_status": null,
+      "expect_outcome": "succeeded"
+    },
+    "off-06": {
+      "outcome": "succeeded",
+      "status": "succeeded",
+      "artifact_count": 10,
+      "schema_ok": true,
+      "subtask_roles": [
+        "assemble",
+        "experiment_design",
+        "orchestrator",
+        "paper_research",
+        "repository_analysis",
+        "review"
+      ],
+      "need_mcp_fallback": false,
+      "sandbox_status": null,
+      "expect_outcome": "succeeded"
+    },
+    "off-07": {
+      "outcome": "succeeded",
+      "status": null,
+      "artifact_count": 0,
+      "schema_ok": true,
+      "subtask_roles": [],
+      "need_mcp_fallback": false,
+      "sandbox_status": null,
+      "expect_outcome": "succeeded"
+    },
+    "off-08": {
+      "outcome": "failed",
+      "status": "failed",
+      "artifact_count": 0,
+      "schema_ok": true,
+      "subtask_roles": [
+        "assemble",
+        "experiment_design",
+        "orchestrator",
+        "paper_research",
+        "repository_analysis",
+        "review"
+      ],
+      "need_mcp_fallback": false,
+      "sandbox_status": null,
+      "expect_outcome": "failed"
+    },
+    "off-09": {
+      "outcome": "succeeded",
+      "status": "succeeded",
+      "artifact_count": 10,
+      "schema_ok": true,
+      "subtask_roles": [
+        "assemble",
+        "experiment_design",
+        "orchestrator",
+        "paper_research",
+        "repository_analysis",
+        "review"
+      ],
+      "need_mcp_fallback": false,
+      "sandbox_status": null,
+      "expect_outcome": "succeeded"
+    },
+    "off-10": {
+      "outcome": "succeeded",
+      "status": "succeeded",
+      "artifact_count": 10,
+      "schema_ok": true,
+      "subtask_roles": [
+        "assemble",
+        "experiment_design",
+        "orchestrator",
+        "paper_research",
+        "repository_analysis",
+        "review"
+      ],
+      "need_mcp_fallback": false,
+      "sandbox_status": null,
+      "expect_outcome": "succeeded"
+    },
+    "off-11": {
+      "outcome": "succeeded",
+      "status": "succeeded",
+      "artifact_count": 10,
+      "schema_ok": true,
+      "subtask_roles": [
+        "assemble",
+        "experiment_design",
+        "orchestrator",
+        "paper_research",
+        "repository_analysis",
+        "review"
+      ],
+      "need_mcp_fallback": false,
+      "sandbox_status": null,
+      "expect_outcome": "succeeded"
+    },
+    "off-12": {
+      "outcome": "succeeded",
+      "status": "succeeded",
+      "artifact_count": 10,
+      "schema_ok": true,
+      "subtask_roles": [
+        "assemble",
+        "experiment_design",
+        "orchestrator",
+        "paper_research",
+        "repository_analysis",
+        "review"
+      ],
+      "need_mcp_fallback": false,
+      "sandbox_status": null,
+      "expect_outcome": "succeeded"
+    },
+    "off-13": {
+      "outcome": "succeeded",
+      "status": "succeeded",
+      "artifact_count": 0,
+      "schema_ok": true,
+      "subtask_roles": [],
+      "need_mcp_fallback": false,
+      "sandbox_status": null,
+      "expect_outcome": "succeeded"
+    },
+    "off-14": {
+      "outcome": "succeeded",
+      "status": "succeeded",
+      "artifact_count": 0,
+      "schema_ok": true,
+      "subtask_roles": [],
+      "need_mcp_fallback": false,
+      "sandbox_status": null,
+      "expect_outcome": "succeeded"
+    },
+    "off-15": {
+      "outcome": "correct_refuse",
+      "status": "succeeded",
+      "artifact_count": 0,
+      "schema_ok": true,
+      "subtask_roles": [],
+      "need_mcp_fallback": true,
+      "sandbox_status": null,
+      "expect_outcome": "correct_refuse"
+    },
+    "off-16": {
+      "outcome": "correct_refuse",
+      "status": "correct_refuse",
+      "artifact_count": 0,
+      "schema_ok": true,
+      "subtask_roles": [],
+      "need_mcp_fallback": true,
+      "sandbox_status": null,
+      "expect_outcome": "correct_refuse"
+    },
+    "off-17": {
+      "outcome": "succeeded",
+      "status": "succeeded",
+      "artifact_count": 0,
+      "schema_ok": true,
+      "subtask_roles": [],
+      "need_mcp_fallback": false,
+      "sandbox_status": null,
+      "expect_outcome": "succeeded"
+    },
+    "off-18": {
+      "outcome": "succeeded",
+      "status": null,
+      "artifact_count": 0,
+      "schema_ok": true,
+      "subtask_roles": [],
+      "need_mcp_fallback": false,
+      "sandbox_status": "succeeded",
+      "expect_outcome": "succeeded"
+    },
+    "off-19": {
+      "outcome": "succeeded",
+      "status": null,
+      "artifact_count": 0,
+      "schema_ok": true,
+      "subtask_roles": [],
+      "need_mcp_fallback": false,
+      "sandbox_status": "timed_out",
+      "expect_outcome": "succeeded"
+    },
+    "off-20": {
+      "outcome": "failed",
+      "status": "failed",
+      "artifact_count": 0,
+      "schema_ok": true,
+      "subtask_roles": [
+        "assemble",
+        "experiment_design",
+        "orchestrator",
+        "paper_research",
+        "repository_analysis",
+        "review"
+      ],
+      "need_mcp_fallback": false,
+      "sandbox_status": null,
+      "expect_outcome": "failed"
+    },
+    "e2e-01": {
+      "outcome": "succeeded",
+      "status": "partial_succeeded",
+      "artifact_count": 9,
+      "schema_ok": true,
+      "subtask_roles": [
+        "assemble",
+        "orchestrator",
+        "paper_research",
+        "review"
+      ],
+      "need_mcp_fallback": false,
+      "sandbox_ok_status": null,
+      "sandbox_reject_status": null,
+      "expect_outcome": "succeeded"
+    },
+    "e2e-02": {
+      "outcome": "succeeded",
+      "status": "partial_succeeded",
+      "artifact_count": 9,
+      "schema_ok": true,
+      "subtask_roles": [
+        "assemble",
+        "orchestrator",
+        "repository_analysis",
+        "review"
+      ],
+      "need_mcp_fallback": false,
+      "sandbox_ok_status": null,
+      "sandbox_reject_status": null,
+      "expect_outcome": "succeeded"
+    },
+    "e2e-03": {
+      "outcome": "succeeded",
+      "status": "succeeded",
+      "artifact_count": 9,
+      "schema_ok": true,
+      "subtask_roles": [
+        "assemble",
+        "experiment_design",
+        "orchestrator",
+        "paper_research",
+        "repository_analysis",
+        "review"
+      ],
+      "need_mcp_fallback": false,
+      "sandbox_ok_status": null,
+      "sandbox_reject_status": null,
+      "expect_outcome": "succeeded"
+    },
+    "e2e-04": {
+      "outcome": "succeeded",
+      "status": "succeeded",
+      "artifact_count": 9,
+      "schema_ok": true,
+      "subtask_roles": [
+        "assemble",
+        "experiment_design",
+        "orchestrator",
+        "paper_research",
+        "repository_analysis",
+        "review"
+      ],
+      "need_mcp_fallback": false,
+      "sandbox_ok_status": null,
+      "sandbox_reject_status": null,
+      "expect_outcome": "succeeded"
+    },
+    "e2e-05": {
+      "outcome": "succeeded",
+      "status": "succeeded",
+      "artifact_count": 9,
+      "schema_ok": true,
+      "subtask_roles": [
+        "assemble",
+        "experiment_design",
+        "orchestrator",
+        "paper_research",
+        "repository_analysis",
+        "review"
+      ],
+      "need_mcp_fallback": false,
+      "sandbox_ok_status": null,
+      "sandbox_reject_status": null,
+      "expect_outcome": "succeeded"
+    },
+    "e2e-06": {
+      "outcome": "succeeded",
+      "status": "succeeded",
+      "artifact_count": 9,
+      "schema_ok": true,
+      "subtask_roles": [
+        "assemble",
+        "experiment_design",
+        "orchestrator",
+        "paper_research",
+        "repository_analysis",
+        "review"
+      ],
+      "need_mcp_fallback": false,
+      "sandbox_ok_status": null,
+      "sandbox_reject_status": null,
+      "expect_outcome": "succeeded"
+    },
+    "e2e-07": {
+      "outcome": "succeeded",
+      "status": "failed",
+      "artifact_count": 0,
+      "schema_ok": true,
+      "subtask_roles": [
+        "assemble",
+        "experiment_design",
+        "orchestrator",
+        "paper_research",
+        "repository_analysis",
+        "review"
+      ],
+      "need_mcp_fallback": false,
+      "sandbox_ok_status": null,
+      "sandbox_reject_status": null,
+      "expect_outcome": "succeeded"
+    },
+    "e2e-08": {
+      "outcome": "correct_refuse",
+      "status": "succeeded",
+      "artifact_count": 0,
+      "schema_ok": true,
+      "subtask_roles": [],
+      "need_mcp_fallback": true,
+      "sandbox_ok_status": null,
+      "sandbox_reject_status": null,
+      "expect_outcome": "correct_refuse"
+    },
+    "e2e-09": {
+      "outcome": "succeeded",
+      "status": "succeeded",
+      "artifact_count": 9,
+      "schema_ok": true,
+      "subtask_roles": [
+        "assemble",
+        "experiment_design",
+        "orchestrator",
+        "paper_research",
+        "repository_analysis",
+        "review"
+      ],
+      "need_mcp_fallback": false,
+      "sandbox_ok_status": null,
+      "sandbox_reject_status": null,
+      "expect_outcome": "succeeded"
+    },
+    "e2e-10": {
+      "outcome": "succeeded",
+      "status": "succeeded",
+      "artifact_count": 0,
+      "schema_ok": true,
+      "subtask_roles": [],
+      "need_mcp_fallback": false,
+      "sandbox_ok_status": "succeeded",
+      "sandbox_reject_status": "rejected",
+      "expect_outcome": "succeeded"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+[project]
+name = "scholarflow"
+version = "0.1.0"
+description = "ScholarFlow — multi-agent research orchestration (API runtime deps)"
+requires-python = ">=3.12"
+dependencies = [
+    "scholarflow-harness",
+    "fastapi>=0.115.0",
+    "httpx>=0.28.0",
+    "python-multipart>=0.0.31",
+    "sse-starlette>=2.1.0",
+    "uvicorn[standard]>=0.34.0",
+    "langchain>=1.2.15",
+    "langchain-deepseek>=1.0.1",
+    "langchain-openai>=1.2.1",
+    "langgraph>=1.1.9",
+    "pydantic>=2.12.5",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3",
+    "pytest-asyncio>=1.3.0",
+    "ruff>=0.14.11",
+]
+
+[tool.uv.sources]
+scholarflow-harness = { path = "packages/harness", editable = true }
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"

@@ -1,0 +1,38 @@
+{
+  "task_id": "rag-test-001",
+  "title": "RAG (Retrieval-Augmented Generation) Mainstream Architectures and Open-Source Implementations",
+  "objective": "Systematic literature review of arXiv papers combined with GitHub repository analysis of open-source RAG implementations",
+  "research_questions": [
+    "What are the mainstream architectural paradigms in RAG (Naive, Advanced, Modular)?",
+    "How do different retrieval strategies (semantic search, hybrid retrieval) impact RAG accuracy?",
+    "What are the key components and design patterns in modern RAG systems?",
+    "How do open-source frameworks like LangChain implement RAG pipelines?"
+  ],
+  "search_queries": [
+    "Retrieval-Augmented Generation survey architecture",
+    "RAG taxonomy advanced retrieval hybrid search",
+    "RAG evaluation benchmark"
+  ],
+  "code_search_queries": [
+    "langchain RAG",
+    "RAG pipeline"
+  ],
+  "date_range": {
+    "start": null,
+    "end": null
+  },
+  "expected_outputs": [
+    "research_report.md",
+    "research_plan.json",
+    "paper_evidence.json",
+    "paper_matrix.csv",
+    "repository_evidence.json",
+    "repository_matrix.csv",
+    "experiment_plan.md",
+    "evidence_review.json",
+    "sources.json"
+  ],
+  "completion_criteria": [
+    "Nine contract artifacts written"
+  ]
+}

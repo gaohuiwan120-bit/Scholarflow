@@ -1,0 +1,105 @@
+{
+  "task_id": "sf-fc98856e797b",
+  "status": "failed",
+  "effective_data_mode": "live",
+  "overall_status": "failed",
+  "review_decision": "fail",
+  "cleaned_paper_query": "image compressed sensing reconstruction deep learning",
+  "plan_title": "Deep Learning for Image Compressed Sensing Reconstruction",
+  "plan_search_queries": [
+    "image compressed sensing reconstruction deep learning",
+    "image compressed sensing reconstruction deep learning reconstruction",
+    "image compressive sensing deep learning"
+  ],
+  "plan_code_search_queries": [
+    "image compressive sensing OR ISTA-Net OR ADMM-CSNet language:Python stars:>5"
+  ],
+  "papers": [
+    {
+      "id": "paper-2207.06746v1",
+      "title": "Single-Pixel Image Reconstruction Based on Block Compressive Sensing and Deep Learning",
+      "tier": "core",
+      "url": "https://arxiv.org/abs/2207.06746v1"
+    },
+    {
+      "id": "paper-0812.3137v1",
+      "title": "Compressive sensing: a paradigm shift in signal processing",
+      "tier": "core",
+      "url": "https://arxiv.org/abs/0812.3137v1"
+    },
+    {
+      "id": "paper-2301.02033v1",
+      "title": "Physics-informed self-supervised deep learning reconstruction for accelerated first-pass perfusion cardiac MRI",
+      "tier": "supporting",
+      "url": "https://arxiv.org/abs/2301.02033v1"
+    },
+    {
+      "id": "paper-1907.11711v1",
+      "title": "Deep MRI Reconstruction: Unrolled Optimization Algorithms Meet Neural Networks",
+      "tier": "supporting",
+      "url": "https://arxiv.org/abs/1907.11711v1"
+    }
+  ],
+  "core_ids": [
+    "paper-2207.06746v1",
+    "paper-0812.3137v1"
+  ],
+  "supporting_ids": [
+    "paper-2301.02033v1",
+    "paper-1907.11711v1"
+  ],
+  "repositories": [],
+  "experiment_upstream": null,
+  "experiment_has_rag": false,
+  "review_has_rag_claim": false,
+  "artifact_present": {
+    "research_plan.json": false,
+    "paper_evidence.json": false,
+    "paper_matrix.csv": false,
+    "repository_evidence.json": false,
+    "repository_matrix.csv": false,
+    "experiment_plan.md": false,
+    "evidence_review.json": false,
+    "sources.json": false,
+    "research_report.md": false
+  },
+  "subtasks": [
+    {
+      "role": "orchestrator",
+      "status": "succeeded",
+      "data_source": "deterministic",
+      "error": null
+    },
+    {
+      "role": "paper_research",
+      "status": "succeeded",
+      "data_source": "live_mcp",
+      "error": null
+    },
+    {
+      "role": "repository_analysis",
+      "status": "failed",
+      "data_source": "live_mcp",
+      "error": "live MCP failed: No relevant repository after search/hints. last_error=get_repository_overview failed: unhandled errors in a TaskGroup (1 sub-exception)"
+    },
+    {
+      "role": "experiment_design",
+      "status": "failed",
+      "data_source": "none",
+      "error": "Upstream evidence invalid: repository_evidence_invalid_or_missing"
+    },
+    {
+      "role": "review",
+      "status": "failed",
+      "data_source": "deterministic",
+      "error": "No repository evidence; repository_analysis failed — evidence not trustworthy; Empty or failed experiment plan"
+    },
+    {
+      "role": "assemble",
+      "status": "skipped",
+      "data_source": "none",
+      "error": "Skipped because review failed"
+    }
+  ],
+  "historical_fcb379": "partial_succeeded"
+}

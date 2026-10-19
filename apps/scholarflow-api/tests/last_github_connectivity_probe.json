@@ -1,0 +1,112 @@
+{
+  "ts": "2026-10-19T05:05:36.106617+00:00",
+  "token_configured": true,
+  "token_len": 40,
+  "token_prefix": "ghp_...",
+  "steps": {
+    "dns": {
+      "ok": true,
+      "addrs": [
+        "20.205.243.168"
+      ]
+    },
+    "tls": {
+      "ok": true,
+      "version": "TLSv1.3",
+      "cipher": "TLS_AES_128_GCM_SHA256"
+    },
+    "unauth_rate_limit": {
+      "ok": true,
+      "status": 200,
+      "remaining": 51,
+      "limit": 60
+    },
+    "auth_rate_limit": {
+      "ok": false,
+      "status": 401,
+      "kind": "http_401",
+      "message": "Bad credentials",
+      "note": "token value not logged"
+    },
+    "repo_jianzhangcs_ISTA-Net": {
+      "ok": true,
+      "status": 200,
+      "full_name": "jianzhangcs/ISTA-Net",
+      "description": "ISTA-Net: Interpretable Optimization-Inspired Deep Network for Image Compressive Sensing, CVPR2018 (Tensorflow Code)",
+      "stars": 149,
+      "language": "Python",
+      "html_url": "https://github.com/jianzhangcs/ISTA-Net",
+      "archived": false
+    },
+    "repo_jianzhangcs_ISTA-Net-PyTorch": {
+      "ok": true,
+      "status": 200,
+      "full_name": "jianzhangcs/ISTA-Net-PyTorch",
+      "description": "ISTA-Net: Interpretable Optimization-Inspired Deep Network for Image Compressive Sensing, CVPR2018 (PyTorch Code)",
+      "stars": 303,
+      "language": "Python",
+      "html_url": "https://github.com/jianzhangcs/ISTA-Net-PyTorch",
+      "archived": false
+    },
+    "client_search": {
+      "ok": true,
+      "elapsed_s": 1.56,
+      "n": 4,
+      "top": [
+        {
+          "repository": "jianzhangcs/ISTA-Net-PyTorch",
+          "description": "ISTA-Net: Interpretable Optimization-Inspired Deep Network for Image Compressive Sensing, CVPR2018 ("
+        },
+        {
+          "repository": "jianzhangcs/ISTA-Net",
+          "description": "ISTA-Net: Interpretable Optimization-Inspired Deep Network for Image Compressive Sensing, CVPR2018 ("
+        },
+        {
+          "repository": "hansinahuja/ISTA-Net",
+          "description": "Implementing ISTA-Net, an interpretable optimization-inspired deep network for image compressive sen"
+        }
+      ]
+    },
+    "client_overview_pytorch": {
+      "ok": true,
+      "elapsed_s": 10.48,
+      "repository": "jianzhangcs/ISTA-Net-PyTorch",
+      "description": "ISTA-Net: Interpretable Optimization-Inspired Deep Network for Image Compressive Sensing, CVPR2018 (PyTorch Code)",
+      "cs_related": true,
+      "key_modules_sample": [
+        "Figs/",
+        "README.md",
+        "TEST_CS_ISTA_Net.py",
+        "TEST_CS_ISTA_Net_plus.py",
+        "TEST_ISTA_Net_plus_scripts.sh",
+        "TEST_ISTA_Net_scripts.sh",
+        "TEST_MRI_CS_ISTA_Net_plus.py",
+        "Train_CS_ISTA_Net.py"
+      ],
+      "stars": 303
+    },
+    "mcp_overview": {
+      "ok": false,
+      "error_type": "ImportError",
+      "error": "cannot import name 'create_server' from 'scholar_mcp.server' (E:\\AgentProject\\deepflow_project\\extensions\\scholar_mcp\\scholar_mcp\\server.py)"
+    },
+    "mcp_search": {
+      "ok": false,
+      "error_type": "ScholarMcpError",
+      "error": "search_github_repositories failed: unhandled errors in a TaskGroup (1 sub-exception)"
+    }
+  },
+  "summary": {
+    "dns_ok": true,
+    "tls_ok": true,
+    "unauth_api_ok": true,
+    "auth_api_ok": false,
+    "auth_kind": "http_401",
+    "client_search_ok": true,
+    "client_overview_ok": true,
+    "mcp_overview_ok": false,
+    "mcp_search_ok": false,
+    "ista_net_exists": true,
+    "ista_net_pytorch_cs": true
+  }
+}

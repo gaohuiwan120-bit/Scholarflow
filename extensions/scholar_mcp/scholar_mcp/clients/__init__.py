@@ -1,0 +1,1 @@
+"""Scholar MCP client helpers."""

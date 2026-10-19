@@ -1,0 +1,60 @@
+{
+  "ts": "2026-10-19T05:53:35.760724+00:00",
+  "token_configured": true,
+  "token_len": 93,
+  "token_prefix_hint": "gith...",
+  "steps": {
+    "auth_user": {
+      "ok": true,
+      "status": 200,
+      "kind": "ok",
+      "authenticated": true,
+      "login_present": true,
+      "message": null
+    },
+    "rate_limit": {
+      "ok": true,
+      "status": 200,
+      "core": {
+        "limit": 5000,
+        "remaining": 4999,
+        "used": 1,
+        "reset_unix": 1792392816,
+        "reset_utc": "2026-10-19T06:53:36+00:00"
+      },
+      "search": {
+        "limit": 30,
+        "remaining": 30,
+        "used": 0,
+        "reset_utc": "2026-10-19T05:54:37+00:00"
+      }
+    },
+    "mcp_get_repository_overview": {
+      "ok": true,
+      "elapsed_s": 5.02,
+      "repository": "jianzhangcs/ISTA-Net",
+      "description": "ISTA-Net: Interpretable Optimization-Inspired Deep Network for Image Compressive Sensing, CVPR2018 (Tensorflow Code)",
+      "stars": 149,
+      "language": "Python",
+      "cs_related": true,
+      "calls": [
+        {
+          "tool": "get_repository_overview",
+          "ok": true,
+          "duration_ms": 5017,
+          "error": null
+        }
+      ]
+    }
+  },
+  "summary": {
+    "token_configured": true,
+    "auth_ok": true,
+    "auth_kind": "ok",
+    "rate_limit_ok": true,
+    "core_remaining": 4999,
+    "core_limit": 5000,
+    "core_reset_utc": "2026-10-19T06:53:36+00:00",
+    "mcp_ok": true
+  }
+}

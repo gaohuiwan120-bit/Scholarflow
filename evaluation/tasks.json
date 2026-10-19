@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "tasks": [
+    {"id": "rag-survey", "prompt": "Survey retrieval-augmented generation architectures and list key open-source implementations.", "expected_artifacts": 9},
+    {"id": "vit-classification", "prompt": "Review Vision Transformer variants for image classification with reproducible codebases.", "expected_artifacts": 9},
+    {"id": "diffusion-sampling", "prompt": "Compare diffusion model sampling methods and note implementation repos.", "expected_artifacts": 9},
+    {"id": "llm-agent-memory", "prompt": "Investigate memory mechanisms in LLM agents with paper and code evidence.", "expected_artifacts": 9},
+    {"id": "multimodal-fusion", "prompt": "Survey multimodal fusion approaches for vision-language tasks.", "expected_artifacts": 9},
+    {"id": "efficient-transformers", "prompt": "Review efficient transformer architectures for long-context modeling.", "expected_artifacts": 9},
+    {"id": "object-detection-transformers", "prompt": "Survey transformer-based object detection with open implementations.", "expected_artifacts": 9},
+    {"id": "self-supervised-vision", "prompt": "Compare self-supervised vision pretraining methods and codebases.", "expected_artifacts": 9},
+    {"id": "graph-neural-networks", "prompt": "Review GNN applications in molecular property prediction.", "expected_artifacts": 9},
+    {"id": "reinforcement-learning-offline", "prompt": "Survey offline RL algorithms with reproducible benchmarks.", "expected_artifacts": 9},
+    {"id": "speech-recognition-whisper", "prompt": "Analyze open-source ASR systems inspired by Whisper-style models.", "expected_artifacts": 9},
+    {"id": "code-generation-llm", "prompt": "Review code generation LLM evaluation benchmarks and repos.", "expected_artifacts": 9},
+    {"id": "federated-learning-privacy", "prompt": "Survey federated learning privacy techniques with implementations.", "expected_artifacts": 9},
+    {"id": "knowledge-distillation", "prompt": "Compare knowledge distillation methods for vision models.", "expected_artifacts": 9},
+    {"id": "ner-transformers", "prompt": "Review transformer NER systems and datasets.", "expected_artifacts": 9},
+    {"id": "time-series-forecasting", "prompt": "Survey deep learning time-series forecasting approaches.", "expected_artifacts": 9},
+    {"id": "3d-reconstruction-nerf", "prompt": "Review NeRF-style 3D reconstruction papers and code.", "expected_artifacts": 9},
+    {"id": "prompt-engineering-survey", "prompt": "Survey prompt engineering techniques for LLM agents.", "expected_artifacts": 9},
+    {"id": "vector-database-rag", "prompt": "Compare vector databases used in RAG pipelines.", "expected_artifacts": 9},
+    {"id": "scientific-agent-tooling", "prompt": "Review agent tool-use frameworks for scientific workflows.", "expected_artifacts": 9}
+  ]
+}

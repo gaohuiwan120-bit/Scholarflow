@@ -1,0 +1,172 @@
+{
+  "version": "agent-bench-v1",
+  "suite": "e2e",
+  "description": "10 E2E benchmarks via ScholarFlow FastAPI TestClient (fixture by default)",
+  "tasks": [
+    {
+      "id": "e2e-01",
+      "title": "Paper research task yields paper evidence and report artifacts",
+      "entry": "api_task",
+      "kind": "paper_research",
+      "data_mode": "fixture",
+      "input": {
+        "question": "Survey Blended RAG vs Naive RAG papers",
+        "persist_artifacts": true
+      },
+      "expect_outcome": "succeeded",
+      "expect_artifacts": "research_pack",
+      "assertions": ["status_succeeded_or_partial", "has_papers", "runtime_research", "artifacts_api_listable"],
+      "tags": ["e2e", "paper"]
+    },
+    {
+      "id": "e2e-02",
+      "title": "Repository analysis yields repository artifacts",
+      "entry": "api_task",
+      "kind": "repository_analysis",
+      "data_mode": "fixture",
+      "input": {
+        "question": "Analyze open-source RAG repository evidence",
+        "persist_artifacts": true
+      },
+      "expect_outcome": "succeeded",
+      "expect_artifacts": "research_pack",
+      "assertions": ["status_succeeded_or_partial", "has_repos", "runtime_research"],
+      "tags": ["e2e", "repo"]
+    },
+    {
+      "id": "e2e-03",
+      "title": "Orchestration with parallel paper and repo",
+      "entry": "api_task",
+      "kind": "research_orchestration",
+      "data_mode": "fixture",
+      "input": {
+        "question": "E2E parallel Blended RAG survey",
+        "simulate_work_seconds": 0.4,
+        "persist_artifacts": true
+      },
+      "expect_outcome": "succeeded",
+      "expect_artifacts": "nine",
+      "assertions": ["status_succeeded_or_partial", "roles_orchestration", "paper_repo_parallel_overlap", "artifact_count_9"],
+      "tags": ["e2e", "parallel"]
+    },
+    {
+      "id": "e2e-04",
+      "title": "Experiment node consumes upstream paper and repo evidence",
+      "entry": "api_task",
+      "kind": "experiment_design",
+      "data_mode": "fixture",
+      "input": {
+        "question": "E2E experiment from upstream evidence",
+        "persist_artifacts": true
+      },
+      "expect_outcome": "succeeded",
+      "expect_artifacts": "research_pack",
+      "assertions": ["status_succeeded_or_partial", "experiment_upstream_ids"],
+      "tags": ["e2e", "experiment"]
+    },
+    {
+      "id": "e2e-05",
+      "title": "Review passes with schema and evidence checks",
+      "entry": "api_task",
+      "kind": "research_orchestration",
+      "data_mode": "fixture",
+      "input": {
+        "question": "E2E review pass Blended RAG",
+        "persist_artifacts": true
+      },
+      "expect_outcome": "succeeded",
+      "expect_artifacts": "nine",
+      "assertions": ["status_succeeded_or_partial", "review_passed", "schema_all_json"],
+      "tags": ["e2e", "review"]
+    },
+    {
+      "id": "e2e-06",
+      "title": "Fixture evidence flows into experiment and review",
+      "entry": "api_task",
+      "kind": "research_orchestration",
+      "data_mode": "fixture",
+      "input": {
+        "question": "E2E fixture data downstream flow",
+        "persist_artifacts": true
+      },
+      "expect_outcome": "succeeded",
+      "expect_artifacts": "nine",
+      "assertions": ["status_succeeded_or_partial", "has_papers", "has_repos", "experiment_upstream_ids", "review_present"],
+      "tags": ["e2e", "dataflow"]
+    },
+    {
+      "id": "e2e-07",
+      "title": "Forced paper failure propagates failed status",
+      "entry": "api_task",
+      "kind": "research_orchestration",
+      "data_mode": "fixture",
+      "input": {
+        "question": "E2E force fail paper",
+        "force_fail_paper": true,
+        "persist_artifacts": true
+      },
+      "expect_outcome": "succeeded",
+      "expect_artifacts": "none_or_partial",
+      "assertions": ["status_failed", "paper_subtask_failed"],
+      "tags": ["e2e", "failure"],
+      "notes": "Outcome succeeded means failure-path verification passed; API status must be failed."
+    },
+    {
+      "id": "e2e-08",
+      "title": "RAG insufficient evidence fallback and refuse signal",
+      "entry": "api_task",
+      "kind": "rag_query",
+      "data_mode": "fixture",
+      "input": {
+        "question": "zzzxqyx nonexistent quantum banana ontology 99999",
+        "ensure_index": true,
+        "enable_mcp_fallback": true,
+        "top_k": 5
+      },
+      "expect_outcome": "correct_refuse",
+      "expect_artifacts": "none",
+      "assertions": ["rag_need_mcp_fallback"],
+      "tags": ["e2e", "rag", "refuse"]
+    },
+    {
+      "id": "e2e-09",
+      "title": "Artifacts persist and download via API",
+      "entry": "api_task",
+      "kind": "research_orchestration",
+      "data_mode": "fixture",
+      "input": {
+        "question": "E2E artifact download Blended RAG",
+        "persist_artifacts": true
+      },
+      "expect_outcome": "succeeded",
+      "expect_artifacts": "nine",
+      "assertions": ["status_succeeded_or_partial", "artifact_count_9", "artifacts_api_listable", "artifacts_api_download"],
+      "tags": ["e2e", "artifacts"]
+    },
+    {
+      "id": "e2e-10",
+      "title": "Sandbox success and policy reject end-to-end",
+      "entry": "api_sandbox_pair",
+      "kind": null,
+      "data_mode": "fixture",
+      "input": {
+        "ok": {
+          "task_id": "e2e-sb-ok",
+          "code": "print('sandbox-ok')\n",
+          "prefer_docker": false,
+          "timeout_seconds": 5
+        },
+        "reject": {
+          "task_id": "e2e-sb-rej",
+          "code": "print(open('../secrets.txt').read())\n",
+          "prefer_docker": false,
+          "timeout_seconds": 5
+        }
+      },
+      "expect_outcome": "succeeded",
+      "expect_artifacts": "none",
+      "assertions": ["sandbox_pair_ok_and_reject"],
+      "tags": ["e2e", "sandbox"]
+    }
+  ]
+}

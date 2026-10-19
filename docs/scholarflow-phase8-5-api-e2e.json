@@ -1,0 +1,18 @@
+{
+  "tested_at": "2026-10-18T06:16:45.260971+00:00",
+  "conversation_id": "cv-3e7b2cd27ab1",
+  "direct_sse_events": [
+    "turn_start",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "done"
+  ],
+  "token_preview": "UI E2E OK",
+  "tool_sse_has_tool_start": true,
+  "related_task_id": "sf-545e5fc651cd",
+  "task_http_status": 200,
+  "message": "API path used by Chat UI verified against live backend"
+}

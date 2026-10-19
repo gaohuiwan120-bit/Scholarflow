@@ -1,0 +1,76 @@
+{
+  "version": 2,
+  "description": "ScholarFlow E2E benchmark suite for Agent resume evaluation",
+  "tasks": [
+    {
+      "id": "rag-survey",
+      "prompt": "Use scientific-research-orchestration to survey retrieval-augmented generation architectures and related GitHub implementations. task id: bench-rag-001",
+      "keywords": ["retrieval", "augmented", "RAG", "generation"],
+      "min_papers": 3,
+      "min_repos": 1
+    },
+    {
+      "id": "vit-classification",
+      "prompt": "Use scientific-research-orchestration to review Vision Transformer variants for image classification with reproducible codebases. task id: bench-vit-001",
+      "keywords": ["vision", "transformer", "classification", "ViT"],
+      "min_papers": 3,
+      "min_repos": 1
+    },
+    {
+      "id": "llm-agent-memory",
+      "prompt": "Use scientific-research-orchestration to investigate memory mechanisms in LLM agents with paper and code evidence. task id: bench-memory-001",
+      "keywords": ["memory", "agent", "LLM", "context"],
+      "min_papers": 3,
+      "min_repos": 1
+    },
+    {
+      "id": "diffusion-sampling",
+      "prompt": "Use scientific-research-orchestration to compare diffusion model sampling methods and open-source repos. task id: bench-diffusion-001",
+      "keywords": ["diffusion", "sampling", "generative"],
+      "min_papers": 3,
+      "min_repos": 1
+    },
+    {
+      "id": "efficient-transformers",
+      "prompt": "Use scientific-research-orchestration to review efficient transformer architectures for long-context modeling. task id: bench-efficient-tx-001",
+      "keywords": ["efficient", "transformer", "long-context"],
+      "min_papers": 3,
+      "min_repos": 1
+    },
+    {
+      "id": "code-generation-llm",
+      "prompt": "Use scientific-research-orchestration to review code generation LLM benchmarks and implementations. task id: bench-codegen-001",
+      "keywords": ["code", "generation", "LLM", "benchmark"],
+      "min_papers": 3,
+      "min_repos": 1
+    },
+    {
+      "id": "multimodal-fusion",
+      "prompt": "Use scientific-research-orchestration to survey multimodal fusion for vision-language tasks. task id: bench-vl-001",
+      "keywords": ["multimodal", "vision", "language", "fusion"],
+      "min_papers": 3,
+      "min_repos": 1
+    },
+    {
+      "id": "vector-database-rag",
+      "prompt": "Use scientific-research-orchestration to compare vector databases used in RAG pipelines. task id: bench-vectordb-001",
+      "keywords": ["vector", "database", "RAG", "embedding"],
+      "min_papers": 2,
+      "min_repos": 2
+    },
+    {
+      "id": "scientific-agent-tooling",
+      "prompt": "Use scientific-research-orchestration to review agent tool-use frameworks for scientific workflows. task id: bench-tools-001",
+      "keywords": ["agent", "tool", "MCP", "workflow"],
+      "min_papers": 3,
+      "min_repos": 1
+    },
+    {
+      "id": "prompt-engineering-agents",
+      "prompt": "Use scientific-research-orchestration to survey prompt engineering for multi-agent systems. task id: bench-prompt-001",
+      "keywords": ["prompt", "engineering", "multi-agent", "orchestration"],
+      "min_papers": 3,
+      "min_repos": 1
+    }
+  ]
+}

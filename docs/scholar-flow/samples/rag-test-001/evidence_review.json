@@ -1,0 +1,40 @@
+{
+  "items": [
+    {
+      "claim": "Comprehensive survey covering three RAG paradigms",
+      "related_evidence_ids": [
+        "paper-2312.10997v5"
+      ],
+      "status": "supported",
+      "reason": "Comprehensive survey covering three RAG paradigms; Systematic categorization of retrieval, generation, and augmentation techniques",
+      "recommended_action": "Does not provide in-depth implementation details or code examples"
+    },
+    {
+      "claim": "Practical engineering perspective on RAG stack",
+      "related_evidence_ids": [
+        "paper-2601.05264v1"
+      ],
+      "status": "partially_supported",
+      "reason": "Practical engineering perspective on RAG stack; Unified taxonomy for RAG techniques; Trust framework analysis",
+      "recommended_action": "Broad scope may sacrifice depth in specific areas"
+    },
+    {
+      "claim": "Empirical validation of hybrid retrieval methods",
+      "related_evidence_ids": [
+        "paper-2404.07220v2"
+      ],
+      "status": "supported",
+      "reason": "Empirical validation of hybrid retrieval methods; Clear benchmark results on standard datasets",
+      "recommended_action": "Limited to specific datasets and retrieval configurations"
+    },
+    {
+      "claim": "Industry-leading RAG framework with comprehensive documentation",
+      "related_evidence_ids": [
+        "repo-langchain-ai-langchain"
+      ],
+      "status": "supported",
+      "reason": "Industry-leading RAG framework with comprehensive documentation; Extensive third-party integrations; Active development and community support",
+      "recommended_action": "Abstraction overhead may be excessive for simple use cases"
+    }
+  ]
+}

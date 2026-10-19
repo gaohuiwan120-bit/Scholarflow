@@ -1,0 +1,32 @@
+{
+  "ts": "2026-10-19T06:07:55.149433+00:00",
+  "steps": {
+    "direct_search": {
+      "ok": true,
+      "n": 3,
+      "top": [
+        "jianzhangcs/ISTA-Net-PyTorch",
+        "jianzhangcs/ISTA-Net",
+        "hansinahuja/ISTA-Net"
+      ]
+    },
+    "mcp_overview": {
+      "ok": true,
+      "repository": "jianzhangcs/ISTA-Net-PyTorch",
+      "description": "ISTA-Net: Interpretable Optimization-Inspired Deep Network for Image Compressive Sensing, CVPR2018 (PyTorch Code)"
+    },
+    "resolve": {
+      "ok": true,
+      "selected": "jianzhangcs/ISTA-Net-PyTorch",
+      "method": "topic_hint+github_search",
+      "search_error": null,
+      "candidates_n": 2,
+      "repository": "jianzhangcs/ISTA-Net-PyTorch"
+    }
+  },
+  "summary": {
+    "direct_search": true,
+    "mcp_overview": true,
+    "resolve": true
+  }
+}

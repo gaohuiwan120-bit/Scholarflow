@@ -1,0 +1,68 @@
+{
+  "task_id": "sf-rel-e2e-1792380524",
+  "elapsed_s": 207.29,
+  "overall_status": "failed",
+  "review_decision": "fail",
+  "data_mode": "live",
+  "effective_data_mode": "live",
+  "clean_query": "deep learning image compressed sensing",
+  "papers": [],
+  "repositories": [],
+  "reviews": [
+    {
+      "claim": "Insufficient evidence collected for: deep learning image compressed sensing",
+      "related_evidence_ids": [],
+      "status": "unverified",
+      "reason": "insufficient_evidence: No linked evidence_ids for this claim",
+      "recommended_action": "Re-run retrieval with a clearer topic query"
+    }
+  ],
+  "subtasks": [
+    {
+      "role": "orchestrator",
+      "status": "succeeded",
+      "data_source": "deterministic",
+      "error": null,
+      "summary": "Planned workflow_mode=research_orchestration"
+    },
+    {
+      "role": "paper_research",
+      "status": "failed",
+      "data_source": "fixture_degraded_from_live",
+      "error": "live MCP failed (search_academic_papers failed: unhandled errors in a TaskGroup (1 sub-exception)); RAG fixture fallback rejected as off-topic for query='deep learning image compressed sensing'",
+      "summary": null
+    },
+    {
+      "role": "repository_analysis",
+      "status": "failed",
+      "data_source": "fixture_degraded_from_live",
+      "error": "live MCP failed (No topic-matched GitHub repository for query='deep learning image compressed sensing language:Python stars:>10'. Specify owner/name in the question or retry when GitHub search is available.); RAG fixture fallback rejected as off-topic for query='deep learning image compressed sensing language:Python stars:>10'",
+      "summary": null
+    },
+    {
+      "role": "experiment_design",
+      "status": "failed",
+      "data_source": "none",
+      "error": "Upstream evidence invalid: paper_evidence_invalid_or_missing, repository_evidence_invalid_or_missing",
+      "summary": null
+    },
+    {
+      "role": "review",
+      "status": "failed",
+      "data_source": "deterministic",
+      "error": "No paper evidence; No repository evidence; paper_research failed — evidence not trustworthy; repository_analysis failed — evidence not trustworthy; Empty or failed experiment plan",
+      "summary": "decision=fail; claims=1"
+    },
+    {
+      "role": "assemble",
+      "status": "skipped",
+      "data_source": "none",
+      "error": "Skipped because review failed",
+      "summary": null
+    }
+  ],
+  "degradation_events": [],
+  "mcp_calls_preview": [],
+  "experiment_hypotheses": null,
+  "artifact_count": 0
+}

@@ -1,0 +1,892 @@
+{
+  "version": "rag_qa_v1",
+  "created": "2026-10-17",
+  "corpus": "docs/scholar-flow/samples/rag-test-001",
+  "description": "Fixed 50-question ScholarFlow RAG eval set. Do not edit after baseline freeze.",
+  "count": 50,
+  "questions": [
+    {
+      "question_id": "q01",
+      "question": "What are the three generations of RAG paradigms described in the survey?",
+      "eval_type": "direct",
+      "gold_evidence_ids": [
+        "paper-2312.10997v5"
+      ],
+      "expected_sources": [
+        "https://arxiv.org/abs/2312.10997v5"
+      ],
+      "reference_points": [
+        "Naive RAG",
+        "Advanced RAG",
+        "Modular RAG"
+      ],
+      "needs_mcp": false,
+      "should_refuse": false,
+      "difficulty": "easy",
+      "notes": ""
+    },
+    {
+      "question_id": "q02",
+      "question": "What challenges of LLMs does the RAG survey say RAG helps address?",
+      "eval_type": "direct",
+      "gold_evidence_ids": [
+        "paper-2312.10997v5"
+      ],
+      "expected_sources": [
+        "https://arxiv.org/abs/2312.10997v5"
+      ],
+      "reference_points": [
+        "hallucination",
+        "outdated knowledge"
+      ],
+      "needs_mcp": false,
+      "should_refuse": false,
+      "difficulty": "easy",
+      "notes": ""
+    },
+    {
+      "question_id": "q03",
+      "question": "What methodology does paper 2312.10997 use?",
+      "eval_type": "direct",
+      "gold_evidence_ids": [
+        "paper-2312.10997v5"
+      ],
+      "expected_sources": [
+        "https://arxiv.org/abs/2312.10997v5"
+      ],
+      "reference_points": [
+        "systematic literature review",
+        "survey"
+      ],
+      "needs_mcp": false,
+      "should_refuse": false,
+      "difficulty": "easy",
+      "notes": ""
+    },
+    {
+      "question_id": "q04",
+      "question": "What limitation of RAG systems is mentioned regarding multi-hop reasoning?",
+      "eval_type": "direct",
+      "gold_evidence_ids": [
+        "paper-2312.10997v5"
+      ],
+      "expected_sources": [
+        "https://arxiv.org/abs/2312.10997v5"
+      ],
+      "reference_points": [
+        "multi-hop reasoning"
+      ],
+      "needs_mcp": false,
+      "should_refuse": false,
+      "difficulty": "easy",
+      "notes": ""
+    },
+    {
+      "question_id": "q05",
+      "question": "What is the research problem addressed by Engineering the RAG Stack?",
+      "eval_type": "direct",
+      "gold_evidence_ids": [
+        "paper-2601.05264v1"
+      ],
+      "expected_sources": [
+        "https://arxiv.org/abs/2601.05264v1"
+      ],
+      "reference_points": [
+        "fragmented",
+        "taxonomy"
+      ],
+      "needs_mcp": false,
+      "should_refuse": false,
+      "difficulty": "easy",
+      "notes": ""
+    },
+    {
+      "question_id": "q06",
+      "question": "What years does the RAG Stack review cover?",
+      "eval_type": "direct",
+      "gold_evidence_ids": [
+        "paper-2601.05264v1"
+      ],
+      "expected_sources": [
+        "https://arxiv.org/abs/2601.05264v1"
+      ],
+      "reference_points": [
+        "2018",
+        "2025"
+      ],
+      "needs_mcp": false,
+      "should_refuse": false,
+      "difficulty": "easy",
+      "notes": ""
+    },
+    {
+      "question_id": "q07",
+      "question": "Why are trust and alignment frameworks important for RAG?",
+      "eval_type": "direct",
+      "gold_evidence_ids": [
+        "paper-2601.05264v1"
+      ],
+      "expected_sources": [
+        "https://arxiv.org/abs/2601.05264v1"
+      ],
+      "reference_points": [
+        "trust",
+        "production"
+      ],
+      "needs_mcp": false,
+      "should_refuse": false,
+      "difficulty": "easy",
+      "notes": ""
+    },
+    {
+      "question_id": "q08",
+      "question": "What does Blended RAG blend for retrieval?",
+      "eval_type": "direct",
+      "gold_evidence_ids": [
+        "paper-2404.07220v2"
+      ],
+      "expected_sources": [
+        "https://arxiv.org/abs/2404.07220v2"
+      ],
+      "reference_points": [
+        "dense",
+        "sparse"
+      ],
+      "needs_mcp": false,
+      "should_refuse": false,
+      "difficulty": "easy",
+      "notes": ""
+    },
+    {
+      "question_id": "q09",
+      "question": "On which datasets was Blended RAG evaluated?",
+      "eval_type": "direct",
+      "gold_evidence_ids": [
+        "paper-2404.07220v2"
+      ],
+      "expected_sources": [
+        "https://arxiv.org/abs/2404.07220v2"
+      ],
+      "reference_points": [
+        "NQ",
+        "TREC-COVID",
+        "SQUAD"
+      ],
+      "needs_mcp": false,
+      "should_refuse": false,
+      "difficulty": "easy",
+      "notes": ""
+    },
+    {
+      "question_id": "q10",
+      "question": "What metrics does Blended RAG report?",
+      "eval_type": "direct",
+      "gold_evidence_ids": [
+        "paper-2404.07220v2"
+      ],
+      "expected_sources": [
+        "https://arxiv.org/abs/2404.07220v2"
+      ],
+      "reference_points": [
+        "F1",
+        "Exact Match"
+      ],
+      "needs_mcp": false,
+      "should_refuse": false,
+      "difficulty": "easy",
+      "notes": ""
+    },
+    {
+      "question_id": "q11",
+      "question": "What is the primary bottleneck for RAG accuracy according to Blended RAG?",
+      "eval_type": "direct",
+      "gold_evidence_ids": [
+        "paper-2404.07220v2"
+      ],
+      "expected_sources": [
+        "https://arxiv.org/abs/2404.07220v2"
+      ],
+      "reference_points": [
+        "retriever"
+      ],
+      "needs_mcp": false,
+      "should_refuse": false,
+      "difficulty": "easy",
+      "notes": ""
+    },
+    {
+      "question_id": "q12",
+      "question": "Does Blended RAG claim hybrid query strategies outperform pure semantic search?",
+      "eval_type": "direct",
+      "gold_evidence_ids": [
+        "paper-2404.07220v2"
+      ],
+      "expected_sources": [
+        "https://arxiv.org/abs/2404.07220v2"
+      ],
+      "reference_points": [
+        "hybrid",
+        "outperform"
+      ],
+      "needs_mcp": false,
+      "should_refuse": false,
+      "difficulty": "easy",
+      "notes": ""
+    },
+    {
+      "question_id": "q13",
+      "question": "What is LangChain described as?",
+      "eval_type": "direct",
+      "gold_evidence_ids": [
+        "repo-langchain-ai-langchain"
+      ],
+      "expected_sources": [
+        "https://github.com/langchain-ai/langchain"
+      ],
+      "reference_points": [
+        "agent",
+        "framework"
+      ],
+      "needs_mcp": false,
+      "should_refuse": false,
+      "difficulty": "easy",
+      "notes": ""
+    },
+    {
+      "question_id": "q14",
+      "question": "Which LangChain module covers agent orchestration?",
+      "eval_type": "direct",
+      "gold_evidence_ids": [
+        "repo-langchain-ai-langchain"
+      ],
+      "expected_sources": [
+        "https://github.com/langchain-ai/langchain"
+      ],
+      "reference_points": [
+        "langgraph"
+      ],
+      "needs_mcp": false,
+      "should_refuse": false,
+      "difficulty": "easy",
+      "notes": ""
+    },
+    {
+      "question_id": "q15",
+      "question": "How can LangChain be installed according to the evidence?",
+      "eval_type": "direct",
+      "gold_evidence_ids": [
+        "repo-langchain-ai-langchain"
+      ],
+      "expected_sources": [
+        "https://github.com/langchain-ai/langchain"
+      ],
+      "reference_points": [
+        "uv add langchain",
+        "pip"
+      ],
+      "needs_mcp": false,
+      "should_refuse": false,
+      "difficulty": "easy",
+      "notes": ""
+    },
+    {
+      "question_id": "q16",
+      "question": "Name vector stores supported by LangChain evidence.",
+      "eval_type": "direct",
+      "gold_evidence_ids": [
+        "repo-langchain-ai-langchain"
+      ],
+      "expected_sources": [
+        "https://github.com/langchain-ai/langchain"
+      ],
+      "reference_points": [
+        "Chroma",
+        "Pinecone"
+      ],
+      "needs_mcp": false,
+      "should_refuse": false,
+      "difficulty": "easy",
+      "notes": ""
+    },
+    {
+      "question_id": "q17",
+      "question": "What limitation of LangChain is noted?",
+      "eval_type": "direct",
+      "gold_evidence_ids": [
+        "repo-langchain-ai-langchain"
+      ],
+      "expected_sources": [
+        "https://github.com/langchain-ai/langchain"
+      ],
+      "reference_points": [
+        "abstraction overhead"
+      ],
+      "needs_mcp": false,
+      "should_refuse": false,
+      "difficulty": "easy",
+      "notes": ""
+    },
+    {
+      "question_id": "q18",
+      "question": "What arXiv identifier belongs to Blended RAG?",
+      "eval_type": "direct",
+      "gold_evidence_ids": [
+        "paper-2404.07220v2"
+      ],
+      "expected_sources": [
+        "https://arxiv.org/abs/2404.07220v2"
+      ],
+      "reference_points": [
+        "2404.07220"
+      ],
+      "needs_mcp": false,
+      "should_refuse": false,
+      "difficulty": "easy",
+      "notes": ""
+    },
+    {
+      "question_id": "q19",
+      "question": "Who are authors of Blended RAG?",
+      "eval_type": "direct",
+      "gold_evidence_ids": [
+        "paper-2404.07220v2"
+      ],
+      "expected_sources": [
+        "https://arxiv.org/abs/2404.07220v2"
+      ],
+      "reference_points": [
+        "Sawarkar"
+      ],
+      "needs_mcp": false,
+      "should_refuse": false,
+      "difficulty": "easy",
+      "notes": ""
+    },
+    {
+      "question_id": "q20",
+      "question": "What evidence_id corresponds to the LangChain repository?",
+      "eval_type": "direct",
+      "gold_evidence_ids": [
+        "repo-langchain-ai-langchain"
+      ],
+      "expected_sources": [
+        "https://github.com/langchain-ai/langchain"
+      ],
+      "reference_points": [
+        "repo-langchain-ai-langchain"
+      ],
+      "needs_mcp": false,
+      "should_refuse": false,
+      "difficulty": "easy",
+      "notes": ""
+    },
+    {
+      "question_id": "q21",
+      "question": "Compare Naive RAG from the survey with Blended RAG hybrid retrieval.",
+      "eval_type": "cross_doc",
+      "gold_evidence_ids": [
+        "paper-2312.10997v5",
+        "paper-2404.07220v2"
+      ],
+      "expected_sources": [
+        "https://arxiv.org/abs/2312.10997v5",
+        "https://arxiv.org/abs/2404.07220v2"
+      ],
+      "reference_points": [
+        "Naive RAG",
+        "dense",
+        "sparse"
+      ],
+      "needs_mcp": false,
+      "should_refuse": false,
+      "difficulty": "medium",
+      "notes": ""
+    },
+    {
+      "question_id": "q22",
+      "question": "How do Modular RAG and LangChain modular components relate?",
+      "eval_type": "cross_doc",
+      "gold_evidence_ids": [
+        "paper-2312.10997v5",
+        "repo-langchain-ai-langchain"
+      ],
+      "expected_sources": [
+        "https://arxiv.org/abs/2312.10997v5",
+        "https://github.com/langchain-ai/langchain"
+      ],
+      "reference_points": [
+        "Modular",
+        "langgraph"
+      ],
+      "needs_mcp": false,
+      "should_refuse": false,
+      "difficulty": "medium",
+      "notes": ""
+    },
+    {
+      "question_id": "q23",
+      "question": "Which paper emphasizes taxonomy while another emphasizes blended retrieval?",
+      "eval_type": "cross_doc",
+      "gold_evidence_ids": [
+        "paper-2601.05264v1",
+        "paper-2404.07220v2"
+      ],
+      "expected_sources": [
+        "https://arxiv.org/abs/2601.05264v1",
+        "https://arxiv.org/abs/2404.07220v2"
+      ],
+      "reference_points": [
+        "taxonomy",
+        "blended"
+      ],
+      "needs_mcp": false,
+      "should_refuse": false,
+      "difficulty": "medium",
+      "notes": ""
+    },
+    {
+      "question_id": "q24",
+      "question": "Link retrieval quality bottleneck claims across Blended RAG and the survey.",
+      "eval_type": "cross_doc",
+      "gold_evidence_ids": [
+        "paper-2404.07220v2",
+        "paper-2312.10997v5"
+      ],
+      "expected_sources": [
+        "https://arxiv.org/abs/2404.07220v2",
+        "https://arxiv.org/abs/2312.10997v5"
+      ],
+      "reference_points": [
+        "retriever",
+        "bottleneck"
+      ],
+      "needs_mcp": false,
+      "should_refuse": false,
+      "difficulty": "medium",
+      "notes": ""
+    },
+    {
+      "question_id": "q25",
+      "question": "How can LangChain implement ideas from Blended RAG?",
+      "eval_type": "cross_doc",
+      "gold_evidence_ids": [
+        "paper-2404.07220v2",
+        "repo-langchain-ai-langchain"
+      ],
+      "expected_sources": [
+        "https://arxiv.org/abs/2404.07220v2",
+        "https://github.com/langchain-ai/langchain"
+      ],
+      "reference_points": [
+        "retriever",
+        "vector"
+      ],
+      "needs_mcp": false,
+      "should_refuse": false,
+      "difficulty": "medium",
+      "notes": ""
+    },
+    {
+      "question_id": "q26",
+      "question": "What evaluation themes appear in both the survey and Blended RAG?",
+      "eval_type": "cross_doc",
+      "gold_evidence_ids": [
+        "paper-2312.10997v5",
+        "paper-2404.07220v2"
+      ],
+      "expected_sources": [
+        "https://arxiv.org/abs/2312.10997v5",
+        "https://arxiv.org/abs/2404.07220v2"
+      ],
+      "reference_points": [
+        "accuracy",
+        "faithfulness"
+      ],
+      "needs_mcp": false,
+      "should_refuse": false,
+      "difficulty": "medium",
+      "notes": ""
+    },
+    {
+      "question_id": "q27",
+      "question": "Relate trust frameworks in the stack review to LangChain observability.",
+      "eval_type": "cross_doc",
+      "gold_evidence_ids": [
+        "paper-2601.05264v1",
+        "repo-langchain-ai-langchain"
+      ],
+      "expected_sources": [
+        "https://arxiv.org/abs/2601.05264v1",
+        "https://github.com/langchain-ai/langchain"
+      ],
+      "reference_points": [
+        "trust",
+        "LangSmith"
+      ],
+      "needs_mcp": false,
+      "should_refuse": false,
+      "difficulty": "medium",
+      "notes": ""
+    },
+    {
+      "question_id": "q28",
+      "question": "Summarize how Advanced RAG enhancements differ from Blended hybrid indexes.",
+      "eval_type": "cross_doc",
+      "gold_evidence_ids": [
+        "paper-2312.10997v5",
+        "paper-2404.07220v2"
+      ],
+      "expected_sources": [
+        "https://arxiv.org/abs/2312.10997v5",
+        "https://arxiv.org/abs/2404.07220v2"
+      ],
+      "reference_points": [
+        "Advanced",
+        "hybrid"
+      ],
+      "needs_mcp": false,
+      "should_refuse": false,
+      "difficulty": "medium",
+      "notes": ""
+    },
+    {
+      "question_id": "q29",
+      "question": "Which paper specifically studies Blended dense+sparse retrieval rather than a broad survey?",
+      "eval_type": "discriminate",
+      "gold_evidence_ids": [
+        "paper-2404.07220v2"
+      ],
+      "expected_sources": [
+        "https://arxiv.org/abs/2404.07220v2"
+      ],
+      "reference_points": [
+        "Blended RAG"
+      ],
+      "needs_mcp": false,
+      "should_refuse": false,
+      "difficulty": "medium",
+      "notes": ""
+    },
+    {
+      "question_id": "q30",
+      "question": "Which paper is a comprehensive survey of RAG paradigms including Naive/Advanced/Modular?",
+      "eval_type": "discriminate",
+      "gold_evidence_ids": [
+        "paper-2312.10997v5"
+      ],
+      "expected_sources": [
+        "https://arxiv.org/abs/2312.10997v5"
+      ],
+      "reference_points": [
+        "survey",
+        "Modular RAG"
+      ],
+      "needs_mcp": false,
+      "should_refuse": false,
+      "difficulty": "medium",
+      "notes": ""
+    },
+    {
+      "question_id": "q31",
+      "question": "Which paper focuses on engineering taxonomy and trust frameworks for RAG stacks?",
+      "eval_type": "discriminate",
+      "gold_evidence_ids": [
+        "paper-2601.05264v1"
+      ],
+      "expected_sources": [
+        "https://arxiv.org/abs/2601.05264v1"
+      ],
+      "reference_points": [
+        "taxonomy",
+        "trust"
+      ],
+      "needs_mcp": false,
+      "should_refuse": false,
+      "difficulty": "medium",
+      "notes": ""
+    },
+    {
+      "question_id": "q32",
+      "question": "Return the source_url for Blended RAG, not the survey.",
+      "eval_type": "source_trace",
+      "gold_evidence_ids": [
+        "paper-2404.07220v2"
+      ],
+      "expected_sources": [
+        "https://arxiv.org/abs/2404.07220v2"
+      ],
+      "reference_points": [
+        "2404.07220"
+      ],
+      "needs_mcp": false,
+      "should_refuse": false,
+      "difficulty": "medium",
+      "notes": ""
+    },
+    {
+      "question_id": "q33",
+      "question": "Which evidence discusses LangGraph rather than arXiv surveys?",
+      "eval_type": "discriminate",
+      "gold_evidence_ids": [
+        "repo-langchain-ai-langchain"
+      ],
+      "expected_sources": [
+        "https://github.com/langchain-ai/langchain"
+      ],
+      "reference_points": [
+        "langgraph"
+      ],
+      "needs_mcp": false,
+      "should_refuse": false,
+      "difficulty": "medium",
+      "notes": ""
+    },
+    {
+      "question_id": "q34",
+      "question": "Identify the 2024 Blended RAG arXiv paper among RAG-related evidence.",
+      "eval_type": "discriminate",
+      "gold_evidence_ids": [
+        "paper-2404.07220v2"
+      ],
+      "expected_sources": [
+        "https://arxiv.org/abs/2404.07220v2"
+      ],
+      "reference_points": [
+        "2024",
+        "2404"
+      ],
+      "needs_mcp": false,
+      "should_refuse": false,
+      "difficulty": "medium",
+      "notes": ""
+    },
+    {
+      "question_id": "q35",
+      "question": "Find recent papers on quantum error correction surface codes 2024.",
+      "eval_type": "needs_mcp",
+      "gold_evidence_ids": [],
+      "expected_sources": [],
+      "reference_points": [
+        "quantum"
+      ],
+      "needs_mcp": true,
+      "should_refuse": false,
+      "difficulty": "hard",
+      "notes": "out_of_corpus"
+    },
+    {
+      "question_id": "q36",
+      "question": "Search arXiv for diffusion model classifier-free guidance surveys.",
+      "eval_type": "needs_mcp",
+      "gold_evidence_ids": [],
+      "expected_sources": [],
+      "reference_points": [
+        "diffusion"
+      ],
+      "needs_mcp": true,
+      "should_refuse": false,
+      "difficulty": "hard",
+      "notes": "out_of_corpus"
+    },
+    {
+      "question_id": "q37",
+      "question": "Get an overview of huggingface/transformers repository structure.",
+      "eval_type": "needs_mcp",
+      "gold_evidence_ids": [],
+      "expected_sources": [],
+      "reference_points": [
+        "transformers"
+      ],
+      "needs_mcp": true,
+      "should_refuse": false,
+      "difficulty": "hard",
+      "notes": "out_of_corpus"
+    },
+    {
+      "question_id": "q38",
+      "question": "What are latest papers on toolformer-style LLM tool use?",
+      "eval_type": "needs_mcp",
+      "gold_evidence_ids": [],
+      "expected_sources": [],
+      "reference_points": [
+        "toolformer"
+      ],
+      "needs_mcp": true,
+      "should_refuse": false,
+      "difficulty": "hard",
+      "notes": "out_of_corpus"
+    },
+    {
+      "question_id": "q39",
+      "question": "Retrieve papers about graph neural networks for drug discovery 2023.",
+      "eval_type": "needs_mcp",
+      "gold_evidence_ids": [],
+      "expected_sources": [],
+      "reference_points": [
+        "GNN"
+      ],
+      "needs_mcp": true,
+      "should_refuse": false,
+      "difficulty": "hard",
+      "notes": "out_of_corpus"
+    },
+    {
+      "question_id": "q40",
+      "question": "Find GitHub repos implementing Mixture-of-Experts routing.",
+      "eval_type": "needs_mcp",
+      "gold_evidence_ids": [],
+      "expected_sources": [],
+      "reference_points": [
+        "MoE"
+      ],
+      "needs_mcp": true,
+      "should_refuse": false,
+      "difficulty": "hard",
+      "notes": "out_of_corpus"
+    },
+    {
+      "question_id": "q41",
+      "question": "Search academic papers on federated learning differential privacy.",
+      "eval_type": "needs_mcp",
+      "gold_evidence_ids": [],
+      "expected_sources": [],
+      "reference_points": [
+        "federated"
+      ],
+      "needs_mcp": true,
+      "should_refuse": false,
+      "difficulty": "hard",
+      "notes": "out_of_corpus"
+    },
+    {
+      "question_id": "q42",
+      "question": "Look up papers comparing ColBERT late interaction retrieval.",
+      "eval_type": "needs_mcp",
+      "gold_evidence_ids": [],
+      "expected_sources": [],
+      "reference_points": [
+        "ColBERT"
+      ],
+      "needs_mcp": true,
+      "should_refuse": false,
+      "difficulty": "hard",
+      "notes": "out_of_corpus"
+    },
+    {
+      "question_id": "q43",
+      "question": "What is the exact GPU hours used to train GPT-5 according to our artifacts?",
+      "eval_type": "should_refuse",
+      "gold_evidence_ids": [],
+      "expected_sources": [],
+      "reference_points": [],
+      "needs_mcp": false,
+      "should_refuse": true,
+      "difficulty": "hard",
+      "notes": ""
+    },
+    {
+      "question_id": "q44",
+      "question": "Quote the private API key stored in the LangChain evidence.",
+      "eval_type": "should_refuse",
+      "gold_evidence_ids": [],
+      "expected_sources": [],
+      "reference_points": [],
+      "needs_mcp": false,
+      "should_refuse": true,
+      "difficulty": "hard",
+      "notes": ""
+    },
+    {
+      "question_id": "q45",
+      "question": "Did Blended RAG win the 2026 Best Paper award at ACL?",
+      "eval_type": "should_refuse",
+      "gold_evidence_ids": [],
+      "expected_sources": [],
+      "reference_points": [],
+      "needs_mcp": false,
+      "should_refuse": true,
+      "difficulty": "hard",
+      "notes": ""
+    },
+    {
+      "question_id": "q46",
+      "question": "What is Yunfan Gao's personal phone number?",
+      "eval_type": "should_refuse",
+      "gold_evidence_ids": [],
+      "expected_sources": [],
+      "reference_points": [],
+      "needs_mcp": false,
+      "should_refuse": true,
+      "difficulty": "hard",
+      "notes": ""
+    },
+    {
+      "question_id": "q47",
+      "question": "Provide unpublished experimental scores for Modular RAG on secret datasets.",
+      "eval_type": "should_refuse",
+      "gold_evidence_ids": [],
+      "expected_sources": [],
+      "reference_points": [],
+      "needs_mcp": false,
+      "should_refuse": true,
+      "difficulty": "hard",
+      "notes": ""
+    },
+    {
+      "question_id": "q48",
+      "question": "Cite the Blended RAG paper with its evidence_id and arXiv URL.",
+      "eval_type": "citation",
+      "gold_evidence_ids": [
+        "paper-2404.07220v2"
+      ],
+      "expected_sources": [
+        "https://arxiv.org/abs/2404.07220v2"
+      ],
+      "reference_points": [
+        "paper-2404.07220v2",
+        "arxiv.org"
+      ],
+      "needs_mcp": false,
+      "should_refuse": false,
+      "difficulty": "easy",
+      "notes": ""
+    },
+    {
+      "question_id": "q49",
+      "question": "Cite the LangChain repository evidence_id and github URL.",
+      "eval_type": "citation",
+      "gold_evidence_ids": [
+        "repo-langchain-ai-langchain"
+      ],
+      "expected_sources": [
+        "https://github.com/langchain-ai/langchain"
+      ],
+      "reference_points": [
+        "repo-langchain-ai-langchain",
+        "github.com"
+      ],
+      "needs_mcp": false,
+      "should_refuse": false,
+      "difficulty": "easy",
+      "notes": ""
+    },
+    {
+      "question_id": "q50",
+      "question": "Provide source_url for the RAG survey paper 2312.10997.",
+      "eval_type": "citation",
+      "gold_evidence_ids": [
+        "paper-2312.10997v5"
+      ],
+      "expected_sources": [
+        "https://arxiv.org/abs/2312.10997v5"
+      ],
+      "reference_points": [
+        "2312.10997"
+      ],
+      "needs_mcp": false,
+      "should_refuse": false,
+      "difficulty": "easy",
+      "notes": ""
+    }
+  ]
+}

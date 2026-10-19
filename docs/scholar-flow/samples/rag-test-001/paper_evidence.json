@@ -1,0 +1,104 @@
+{
+  "items": [
+    {
+      "evidence_id": "paper-2312.10997v5",
+      "title": "Retrieval-Augmented Generation for Large Language Models: A Survey",
+      "authors": [
+        "Yunfan Gao",
+        "Yun Xiong",
+        "Xinyu Gao",
+        "Kangxiang Jia",
+        "Jinliu Pan",
+        "Yuxi Bi",
+        "Yi Dai",
+        "Jiawei Sun",
+        "Meng Wang",
+        "Haofen Wang"
+      ],
+      "year": 2023,
+      "venue": null,
+      "identifier": "2312.10997v5",
+      "source_url": "https://arxiv.org/abs/2312.10997v5",
+      "research_problem": "LLMs face challenges of hallucination, outdated knowledge, and non-transparent reasoning processes that limit their reliability in knowledge-intensive tasks",
+      "methodology": "Comprehensive survey and systematic literature review covering Naive RAG, Advanced RAG, and Modular RAG paradigms",
+      "datasets": [],
+      "metrics": [
+        "Retrieval accuracy",
+        "Generation faithfulness",
+        "End-to-end task performance"
+      ],
+      "key_findings": [
+        "RAG paradigms evolved through three generations: Naive RAG (retrieve-then-generate), Advanced RAG (pre-retrieval, post-retrieval enhancements), and Modular RAG (flexible module composition)",
+        "The tripartite foundation of RAG includes retrieval, generation, and augmentation techniques",
+        "RAG effectively addresses hallucination by grounding generation in retrieved external knowledge",
+        "Evaluation frameworks and benchmarks are critical for advancing RAG systems"
+      ],
+      "limitations": [
+        "RAG systems face challenges in multi-hop reasoning and complex query understanding",
+        "Retrieval quality remains a bottleneck affecting overall system performance"
+      ],
+      "evidence_level": "abstract_only",
+      "verification_status": "verified"
+    },
+    {
+      "evidence_id": "paper-2601.05264v1",
+      "title": "Engineering the RAG Stack: A Comprehensive Review of the Architecture and Trust Frameworks for Retrieval-Augmented Generation Systems",
+      "authors": [
+        "Dean Wampler",
+        "Dave Nielson",
+        "Alireza Seddighi"
+      ],
+      "year": 2025,
+      "venue": null,
+      "identifier": "2601.05264v1",
+      "source_url": "https://arxiv.org/abs/2601.05264v1",
+      "research_problem": "RAG research and engineering practices have become fragmented due to increasing diversity of methodologies, lacking a unified taxonomy and practical deployment framework",
+      "methodology": "Systematic literature review spanning 2018-2025, covering academic studies, industrial applications, and real-world deployments",
+      "datasets": [],
+      "metrics": [],
+      "key_findings": [
+        "RAG architectures encompass diverse fusion mechanisms, retrieval strategies, and orchestration approaches",
+        "A unified taxonomy consolidating existing RAG techniques is necessary for practical engineering",
+        "Trust and alignment frameworks are critical components for production RAG deployment",
+        "Quantitative assessment frameworks enable systematic evaluation of RAG system quality"
+      ],
+      "limitations": [],
+      "evidence_level": "abstract_only",
+      "verification_status": "verified"
+    },
+    {
+      "evidence_id": "paper-2404.07220v2",
+      "title": "Blended RAG: Improving RAG (Retriever-Augmented Generation) Accuracy with Semantic Search and Hybrid Query-Based Retrievers",
+      "authors": [
+        "Kunal Sawarkar",
+        "Abhilasha Mangal",
+        "Shivam Raj Solanki"
+      ],
+      "year": 2024,
+      "venue": null,
+      "identifier": "2404.07220v2",
+      "source_url": "https://arxiv.org/abs/2404.07220v2",
+      "research_problem": "RAG accuracy degrades as document corpora scale up, with retriever quality being the primary bottleneck",
+      "methodology": "Empirical evaluation of blended retrieval methods combining Dense Vector indexes and Sparse Encoder indexes with hybrid query strategies",
+      "datasets": [
+        "NQ (Natural Questions)",
+        "TREC-COVID",
+        "SQUAD"
+      ],
+      "metrics": [
+        "Retrieval accuracy",
+        "F1 score",
+        "Exact Match"
+      ],
+      "key_findings": [
+        "Blending dense and sparse retrieval methods significantly improves RAG accuracy over single-method approaches",
+        "Hybrid query strategies outperform pure semantic or pure keyword search in retrieval quality",
+        "Blended RAG surpasses fine-tuning performance on generative Q&A datasets like SQUAD",
+        "The retriever component plays an outsized role in overall RAG system accuracy"
+      ],
+      "limitations": [],
+      "evidence_level": "abstract_only",
+      "verification_status": "verified"
+    }
+  ]
+}

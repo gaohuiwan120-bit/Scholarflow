@@ -1,0 +1,451 @@
+{
+  "task_id": "sf-12fa1e2791cb",
+  "status": "succeeded",
+  "elapsed_s": 7.86,
+  "question": "基于深度学习的图像压缩感知重建",
+  "cleaned_paper_query": "deep learning image compressed sensing",
+  "cleaned_repo_query": "deep learning image compressed sensing language:Python stars:>10",
+  "requested_data_mode": "live",
+  "effective_data_mode": "live",
+  "review_decision": "pass",
+  "overall_status": "succeeded",
+  "degradation_events": [],
+  "mcp_calls": [
+    {
+      "tool": "search_academic_papers",
+      "ok": true,
+      "duration_ms": 4238,
+      "input_summary": {
+        "query": "deep learning image compressed sensing",
+        "max_results": 12,
+        "_attempts": 1
+      },
+      "error": null
+    },
+    {
+      "tool": "get_repository_overview",
+      "ok": true,
+      "duration_ms": 4259,
+      "input_summary": {
+        "repository": "lixing0810/Pytorch_ADMM-CSNet",
+        "_attempts": 1
+      },
+      "error": null
+    },
+    {
+      "tool": "assemble_task_artifacts",
+      "ok": true,
+      "duration_ms": 1870,
+      "input_summary": {
+        "research_plan_json": "{\"task_id\": \"sf-12fa1e2791cb\", \"title\": \"ScholarFlow research: 基于深度学习的图像压缩感知重建\", \"objective\": \"基于深度学习的图像压缩感知重建\", \"research_questions\": [\"基于深度学习的图像压缩感知重建\"], \"search_queries\": [\"deep learning image compressed sensing\", \"deep learning image compressed sensing survey\"], \"code_search_queries\": [\"deep learning image compressed sensing language:Python stars:>10\"], \"date_range\": {\"start\": null, \"end\": null}, \"expected_outputs\": [\"research_report.md\", \"research_plan.json\", \"paper_evidence.json\", \"paper_matrix.csv\", \"repository_evidence.json\", \"repository_matrix.csv\", \"experiment_plan.md\", \"evidence_review.json\", \"sources.json\"], \"completion_criteria\": [\"papers_with_source_url\", \"repositories_with_source_url\", \"experiment_plan_present\", \"review_pass_or_partial\"]}",
+        "paper_evidence_json": "{\"items\": [{\"evidence_id\": \"paper-2410.18954v2\", \"title\": \"Learning Structured Compressed Sensing with Automatic Resource Allocation\", \"authors\": [\"Han Wang\", \"Eduardo Pérez\", \"Iris A. M. Huijben\", \"Hans van Gorp\", \"Ruud van Sloun\", \"Florian Römer\"], \"year\": 2024, \"venue\": null, \"identifier\": \"2410.18954v2\", \"source_url\": \"https://arxiv.org/abs/2410.18954v2\", \"research_problem\": \"Multidimensional data acquisition often requires extensive time and poses significant challenges for hardware and software regarding data storage and processing. Rather than designing a single compression matrix as in conventional compressed sensing, structured compressed sensing yields dimension-specific compression matrices, reducing the number of optimizable parameters. Recent advances in machine learning (ML) have enabled task-based supervised learning of subsampling matrices, albeit at the expense of complex downstream models. Additionally, the sampling resource allocation across dimensions is often determined in advance through heuristics. To address these challenges, we introduce Structured COmpressed Sensing with Automatic Resource Allocation (SCOSARA) with an information theory-based unsupervised learning strategy. SCOSARA adaptively distributes samples across sampling dimensions while maximizing Fisher information content. Using ultrasound localization as a case study, we compare SCOSARA to state-of-the-art ML-based and greedy search algorithms. Simulation results demonstrate that SCOSARA can produce high-quality subsampling matrices that achieve lower Cramér-Rao Bound values than the baselines. In addition, SCOSARA outperforms other ML-based algorithms in terms of the number of trainable parameters, computational complexity, and memory requirements while automatically choosing the number of samples per axis.\", \"methodology\": \"\", \"datasets\": [], \"metrics\": [], \"key_findings\": [\"Multidimensional data acquisition often requires extensive time and poses significant challenges for hardware and software regarding data storage and processing. Rather than designing a single compression matrix as in conventional compressed sensing, structured compressed sensing yields dimension-sp\"], \"limitations\": [], \"evidence_level\": \"abstract_only\", \"verification_status\": \"verified\"}, {\"evidence_id\": \"paper-1903.07824v1\", \"title\": \"Compressed Sensing: From Research to Clinical Practice with Data-Driven Learning\", \"authors\": [\"Joseph Y. Cheng\", \"Feiyu Chen\", \"Christopher Sandino\", \"Morteza Mardani\", \"John M. Pauly\", \"Shreyas S. Vasanawala\"], \"year\": 2019, \"venue\": null, \"identifier\": \"1903.07824v1\", \"source_url\": \"https://arxiv.org/abs/1903.07824v1\", \"research_problem\": \"Compressed sensing in MRI enables high subsampling factors while maintaining diagnostic image quality. This technique enables shortened scan durations and/or improved image resolution. Further, compressed sensing can increase the diagnostic information and value from each scan performed. Overall, compressed sensing has significant clinical impact in improving the diagnostic quality and patient experience for imaging exams. However, a number of challenges exist when moving compressed sensing from research to the clinic. These challenges include hand-crafted image priors, sensitive tuning parameters, and long reconstruction times. Data-driven learning provides a solution to address these challenges. As a result, compressed sensing can have greater clinical impact. In this tutorial, we will review the compressed sensing formulation and outline steps needed to transform this formulation to a deep learning framework. Supplementary open source code in python will be used to demonstrate this approach with open databases. Further, we will discuss considerations in applying data-driven compressed sensing in the clinical setting.\", \"methodology\": \"\", \"datasets\": [], \"metrics\": [], \"key_findings\": [\"Compressed sensing in MRI enables high subsampling factors while maintaining diagnostic image quality. This technique enables shortened scan durations and/or improved image resolution. Further, compressed sensing can increase the diagnostic information and value from each scan performed. Overall, co\"], \"limitations\": [], \"evidence_level\": \"abstract_only\", \"verification_status\": \"verified\"}, {\"evidence_id\": \"paper-2302.10473v6\", \"title\": \"Oriented object detection in optical remote sensing images using deep learning: a survey\", \"authors\": [\"Kun Wang\", \"Zi Wang\", \"Zhang Li\", \"Ang Su\", \"Xichao Teng\", \"Erting Pan\", \"Minhao Liu\", \"Qifeng Yu\"], \"year\": 2023, \"venue\": null, \"identifier\": \"2302.10473v6\", \"source_url\": \"https://arxiv.org/abs/2302.10473v6\", \"research_problem\": \"Oriented object detection is a fundamental yet challenging task in remote sensing (RS), aiming to locate and classify objects with arbitrary orientations. Recent advancements in deep learning have significantly enhanced the capabilities of oriented object detection methods. Given the rapid development of this field, a comprehensive survey of the recent advances in oriented object detection is presented in this paper. Specifically, we begin by tracing the technical evolution from horizontal object detection to oriented object detection and highlighting the specific related challenges, including feature misalignment, spatial misalignment, oriented bounding box (OBB) regression problems, and common issues encountered in RS. Subsequently, we further categorize the existing methods into detection frameworks, OBB regression techniques, feature representation approaches, and solutions to common issues and provide an in-depth discussion of how these methods address the above challenges. In addition, we cover several publicly available datasets and evaluation protocols. Furthermore, we provide a comprehensive comparison and analysis involving the state-of-the-art methods. Toward the end of this paper, we identify several future directions for oriented object detection research.\", \"methodology\": \"\", \"datasets\": [], \"metrics\": [], \"key_findings\": [\"Oriented object detection is a fundamental yet challenging task in remote sensing (RS), aiming to locate and classify objects with arbitrary orientations. Recent advancements in deep learning have significantly enhanced the capabilities of oriented object detection methods. Given the rapid developme\"], \"limitations\": [], \"evidence_level\": \"abstract_only\", \"verification_status\": \"verified\"}, {\"evidence_id\": \"paper-2302.04143v2\", \"title\": \"Predicting Thrombectomy Recanalization from CT Imaging Using Deep Learning Models\", \"authors\": [\"Haoyue Zhang\", \"Jennifer S. Polson\", \"Eric J. Yang\", \"Kambiz Nael\", \"William Speier\", \"Corey W. Arnold\"], \"year\": 2023, \"venue\": null, \"identifier\": \"2302.04143v2\", \"source_url\": \"https://arxiv.org/abs/2302.04143v2\", \"research_problem\": \"For acute ischemic stroke (AIS) patients with large vessel occlusions, clinicians must decide if the benefit of mechanical thrombectomy (MTB) outweighs the risks and potential complications following an invasive procedure. Pre-treatment computed tomography (CT) and angiography (CTA) are widely used to characterize occlusions in the brain vasculature. If a patient is deemed eligible, a modified treatment in cerebral ischemia (mTICI) score will be used to grade how well blood flow is reestablished throughout and following the MTB procedure. An estimation of the likelihood of successful recanalization can support treatment decision-making. In this study, we proposed a fully automated prediction of a patient's recanalization score using pre-treatment CT and CTA imaging. We designed a spatial cross attention network (SCANet) that utilizes vision transformers to localize to pertinent slices and brain regions. Our top model achieved an average cross-validated ROC-AUC of 77.33 $\\\\pm$ 3.9\\\\%. This is a promising result that supports future applications of deep learning on CT and CTA for the identification of eligible AIS patients for MTB.\", \"methodology\": \"\", \"datasets\": [], \"metrics\": [], \"key_findings\": [\"For acute ischemic stroke (AIS) patients with large vessel occlusions, clinicians must decide if the benefit of mechanical thrombectomy (MTB) outweighs the risks and potential complications following an invasive procedure. Pre-treatment computed tomography (CT) and angiography (CTA) are widely used \"], \"limitations\": [], \"evidence_level\": \"abstract_only\", \"verification_status\": \"verified\"}, {\"evidence_id\": \"paper-2301.00942v1\", \"title\": \"Deep Learning and Computational Physics (Lecture Notes)\", \"authors\": [\"Deep Ray\", \"Orazio Pinti\", \"Assad A. Oberai\"], \"year\": 2023, \"venue\": null, \"identifier\": \"2301.00942v1\", \"source_url\": \"https://arxiv.org/abs/2301.00942v1\", \"research_problem\": \"These notes were compiled as lecture notes for a course developed and taught at the University of the Southern California. They should be accessible to a typical engineering graduate student with a strong background in Applied Mathematics.\\n  The main objective of these notes is to introduce a student who is familiar with concepts in linear algebra and partial differential equations to select topics in deep learning. These lecture notes exploit the strong connections between deep learning algorithms and the more conventional techniques of computational physics to achieve two goals. First, they use concepts from computational physics to develop an understanding of deep learning algorithms. Not surprisingly, many concepts in deep learning can be connected to similar concepts in computational physics, and one can utilize this connection to better understand these algorithms. Second, several novel deep learning algorithms can be used to solve challenging problems in computational physics. Thus, they offer someone who is interested in modeling a physical phenomena with a complementary set of tools.\", \"methodology\": \"\", \"datasets\": [], \"metrics\": [], \"key_findings\": [\"These notes were compiled as lecture notes for a course developed and taught at the University of the Southern California. They should be accessible to a typical engineering graduate student with a strong background in Applied Mathematics.\\n  The main objective of these notes is to introduce a studen\"], \"limitations\": [], \"evidence_level\": \"abstract_only\", \"verification_status\": \"verified\"}]}",
+        "repository_evidence_json": "{\"items\": [{\"evidence_id\": \"repo-lixing0810-Pytorch_ADMM-CSNet\", \"repository\": \"lixing0810/Pytorch_ADMM-CSNet\", \"source_url\": \"https://github.com/lixing0810/Pytorch_ADMM-CSNet\", \"description\": \"Codes for model in \\\"ADMM-CSNet: A Deep Learning Approach for Image Compressive Sensing\\\" (TPAMI 2019)\", \"language\": \"Python\", \"framework\": [\"Python\"], \"architecture_summary\": \"# ADMM-CSNet\\n\\n***********************************************************************************************************\\n\\nCodes for model in \\\"ADMM-CSNet: A Deep Learning Approach for Image Compressive Sensing\\\" (TPAMI 2019)\\n \\nIf you use these codes, please cite our paper:\\n\\n[1] Yan Yang, Jian Sun, Huibin Li, Zongben Xu. ADMM-CSNet: A Deep Learning Approach for Image Compressive Sensing (TPAMI 2019).\\n\\nhttp://gr.xjtu.edu.cn/web/jiansun/publications\\n\\nAll rights are reserved by the authors.\\n\\nYan Yang -2021/11/04. For more detail or traning data, feel free to contact: yangyan92@stu.xjtu.edu.cn\\n\\n\\n***********************************************************************************************************\\n\\n\\n\\n## Data link: \\nhttps://drive.google.com/drive/folders/1UhQ01pdmO11Agc5sM61Mt7KQTN9LytNt\\n\\nDownload data and organise as follows in the directory:\\n```\\n### For dataset         \\n└── data\\n    ├── train\\n    ├── test\\n    ├── validate\\n```\\n## Installation\\nThis installation guide shows you how to set up the environment for running our code using conda.\\n\\nFirst clone the ADMM-CSNET repository\\n```\\ngit clone https://github.com/lixing0810/Pytorch_ADMM-CSNet.git\\ncd https://github.com/lixing0810/Pytorch_ADMM-CSNet\\n```\\nThen start a virtual environment with new environment variables nad\\n```\\nconda create --name ADMM_CSNET python=3.9\\nconda activate ADMM_CSNET \\n```\\nInstall PyTorch \\n```\\npip install torch torchvision\\n```\\nInstall all requirements\\n```\\npip install -r requirements.txt\\n```\\n\\n## Usage:\\n\\n1. The nonlinear layer of ADMM-CSNET in pytorch version was supported by the torchpwl package.Replace torchpwl package in your env with which we have provided in the torchpwl folder after installing. \\n\\n2. We have provided a training mri image and mask in the data directory,please replace the dataset downlowded in the google cloud.\\n   The full datasets contains 100 training data,50 testing data and 50 validating data.\\n   The mask_20 directory in data represents 20% sample and so on.\\n\\n3. The net of traini\", \"key_modules\": [\"README.md\", \"csnet_model/\", \"data/\", \"network/\", \"requirements.txt\", \"test.py\", \"torchpwl/\", \"train.py\", \"utils/\"], \"installation_summary\": \"\", \"reproducibility_notes\": [], \"limitations\": [], \"verification_status\": \"verified\"}]}",
+        "experiment_plan_json": "{\"objective\": \"基于深度学习的图像压缩感知重建\", \"hypotheses\": [\"Methods grounded in retrieved evidence improve outcomes for: deep learning image compressed sensing\", \"Open-source references (lixing0810/Pytorch_ADMM-CSNet) can support a reproducible baseline for: deep learning image compressed sensing\"], \"datasets\": [\"domain datasets for deep learning image compressed sensing (to be selected from literature)\"], \"baselines\": [\"Literature baseline from: Learning Structured Compressed Sensing with Automatic Resource Allocation\", \"Ablation / simplified variant of the proposed pipeline\"], \"proposed_pipeline\": [\"Problem framing for: deep learning image compressed sensing\", \"Select methods from accepted paper evidence\", \"Prototype using: lixing0810/Pytorch_ADMM-CSNet\", \"Controlled comparison against literature baselines\", \"Document limitations and reproducibility gaps\"], \"evaluation_metrics\": [\"task-specific metrics from accepted papers\", \"reproducibility checklist\"], \"ablation_studies\": [\"with / without key module from top paper\", \"alternate baseline from second paper\"], \"resource_requirements\": [\"Depends on accepted repositories and datasets\", \"optional live MCP for fresher evidence\"], \"implementation_steps\": [\"Reproduce findings from: Learning Structured Compressed Sensing with Automatic Resource Allocation, Compressed Sensing: From Research to Clinical Practice with Data-Driven Learning, Oriented object detection in optical remote sensing images using deep learning: a survey\", \"Reference implementations: lixing0810/Pytorch_ADMM-CSNet\", \"Run controlled comparisons on declared datasets/metrics\"], \"risks\": [\"Accepted evidence may still be incomplete (abstract-only)\", \"External API rate limits for live mode\", \"Topic drift if retrieval quality is low\"]}",
+        "evidence_review_json": "{\"items\": [{\"claim\": \"Retrieved papers are topically related to: deep learning image compressed sensing\", \"related_evidence_ids\": [\"paper-2410.18954v2\", \"paper-1903.07824v1\", \"paper-2302.10473v6\"], \"status\": \"supported\", \"reason\": \"Linked evidence present and passes topic relevance checks\", \"recommended_action\": \"Proceed with caution; review remains rule-based (not LLM judge)\"}, {\"claim\": \"Paper contributes to the topic: Learning Structured Compressed Sensing with Automatic Resource Allocation\", \"related_evidence_ids\": [\"paper-2410.18954v2\"], \"status\": \"supported\", \"reason\": \"Linked evidence present and passes topic relevance checks\", \"recommended_action\": \"Proceed with caution; review remains rule-based (not LLM judge)\"}, {\"claim\": \"Paper contributes to the topic: Compressed Sensing: From Research to Clinical Practice with Data-Driven Learning\", \"related_evidence_ids\": [\"paper-1903.07824v1\"], \"status\": \"supported\", \"reason\": \"Linked evidence present and passes topic relevance checks\", \"recommended_action\": \"Proceed with caution; review remains rule-based (not LLM judge)\"}, {\"claim\": \"Repository evidence is related to: deep learning image compressed sensing\", \"related_evidence_ids\": [\"repo-lixing0810-Pytorch_ADMM-CSNet\"], \"status\": \"supported\", \"reason\": \"Linked evidence present and passes topic relevance checks\", \"recommended_action\": \"Proceed with caution; review remains rule-based (not LLM judge)\"}]}",
+        "_attempts": 1
+      },
+      "error": null
+    }
+  ],
+  "subtasks": [
+    {
+      "role": "orchestrator",
+      "status": "succeeded",
+      "data_source": "deterministic",
+      "started_at": 1792383025.166201,
+      "ended_at": 1792383025.166201,
+      "duration_ms": 0,
+      "summary": "Planned workflow_mode=research_orchestration",
+      "error": null
+    },
+    {
+      "role": "paper_research",
+      "status": "succeeded",
+      "data_source": "live_mcp",
+      "started_at": 1792383025.1672013,
+      "ended_at": 1792383029.4107082,
+      "duration_ms": 4243,
+      "summary": "Collected 5 relevant papers (live_mcp); query='deep learning image compressed sensing'; rejected=6",
+      "error": null
+    },
+    {
+      "role": "repository_analysis",
+      "status": "succeeded",
+      "data_source": "live_mcp",
+      "started_at": 1792383025.1681752,
+      "ended_at": 1792383031.0191374,
+      "duration_ms": 5850,
+      "summary": "Collected 1 repositories (live_mcp); query='deep learning image compressed sensing language:Python stars:>10'; selected=lixing0810/Pytorch_ADMM-CSNet",
+      "error": null
+    },
+    {
+      "role": "experiment_design",
+      "status": "succeeded",
+      "data_source": "deterministic",
+      "started_at": 1792383031.020452,
+      "ended_at": 1792383031.020452,
+      "duration_ms": 0,
+      "summary": "Built experiment plan from upstream evidence",
+      "error": null
+    },
+    {
+      "role": "review",
+      "status": "succeeded",
+      "data_source": "deterministic",
+      "started_at": 1792383031.020452,
+      "ended_at": 1792383031.0434875,
+      "duration_ms": 23,
+      "summary": "decision=pass; claims=4",
+      "error": null
+    },
+    {
+      "role": "assemble",
+      "status": "succeeded",
+      "data_source": "live_mcp",
+      "started_at": 1792383031.0434875,
+      "ended_at": 1792383032.9722729,
+      "duration_ms": 1928,
+      "summary": "Built 9 artifacts (live_mcp)",
+      "error": null
+    }
+  ],
+  "parallel_overlap": true,
+  "papers": [
+    {
+      "id": "paper-2410.18954v2",
+      "title": "Learning Structured Compressed Sensing with Automatic Resource Allocation",
+      "url": "https://arxiv.org/abs/2410.18954v2",
+      "ok": true,
+      "score": 14.25,
+      "signals": [
+        "title_phrase:compressed sensing",
+        "strong_title_terms:2",
+        "title_phrase:compressed/compressive sensing"
+      ]
+    },
+    {
+      "id": "paper-1903.07824v1",
+      "title": "Compressed Sensing: From Research to Clinical Practice with Data-Driven Learning",
+      "url": "https://arxiv.org/abs/1903.07824v1",
+      "ok": true,
+      "score": 11.0,
+      "signals": [
+        "abstract_phrase:deep learning",
+        "strong_title_terms:2",
+        "title_phrase:compressed/compressive sensing"
+      ]
+    },
+    {
+      "id": "paper-2302.10473v6",
+      "title": "Oriented object detection in optical remote sensing images using deep learning: a survey",
+      "url": "https://arxiv.org/abs/2302.10473v6",
+      "ok": true,
+      "score": 6.300000000000001,
+      "signals": [
+        "title_phrase:deep learning",
+        "strong_title_terms:1",
+        "title_marker:survey_or_review",
+        "penalty:sensing_without_compress"
+      ]
+    },
+    {
+      "id": "paper-2302.04143v2",
+      "title": "Predicting Thrombectomy Recanalization from CT Imaging Using Deep Learning Models",
+      "url": "https://arxiv.org/abs/2302.04143v2",
+      "ok": true,
+      "score": 4.9,
+      "signals": [
+        "title_phrase:deep learning",
+        "penalty:weak_terms_without_strong"
+      ]
+    },
+    {
+      "id": "paper-2301.00942v1",
+      "title": "Deep Learning and Computational Physics (Lecture Notes)",
+      "url": "https://arxiv.org/abs/2301.00942v1",
+      "ok": true,
+      "score": 4.9,
+      "signals": [
+        "title_phrase:deep learning",
+        "penalty:weak_terms_without_strong"
+      ]
+    }
+  ],
+  "repositories": [
+    {
+      "id": "repo-lixing0810-Pytorch_ADMM-CSNet",
+      "repository": "lixing0810/Pytorch_ADMM-CSNet",
+      "url": "https://github.com/lixing0810/Pytorch_ADMM-CSNet",
+      "ok": true,
+      "score": 4.0,
+      "signals": [
+        "abstract_phrase:deep learning"
+      ]
+    }
+  ],
+  "experiment_upstream": {
+    "paper_ids": [
+      "paper-2302.10473v6",
+      "paper-2302.04143v2",
+      "paper-2410.18954v2",
+      "paper-2301.00942v1",
+      "paper-1903.07824v1"
+    ],
+    "repo_ids": [
+      "repo-lixing0810-Pytorch_ADMM-CSNet"
+    ],
+    "hypotheses": [
+      "Methods grounded in retrieved evidence improve outcomes for: deep learning image compressed sensing",
+      "Open-source references (lixing0810/Pytorch_ADMM-CSNet) can support a reproducible baseline for: deep learning image compressed sensing"
+    ]
+  },
+  "reviews": [
+    {
+      "claim": "Retrieved papers are topically related to: deep learning image compressed sensing",
+      "related_evidence_ids": [
+        "paper-2410.18954v2",
+        "paper-1903.07824v1",
+        "paper-2302.10473v6"
+      ],
+      "status": "supported",
+      "reason": "Linked evidence present and passes topic relevance checks",
+      "recommended_action": "Proceed with caution; review remains rule-based (not LLM judge)"
+    },
+    {
+      "claim": "Paper contributes to the topic: Learning Structured Compressed Sensing with Automatic Resource Allocation",
+      "related_evidence_ids": [
+        "paper-2410.18954v2"
+      ],
+      "status": "supported",
+      "reason": "Linked evidence present and passes topic relevance checks",
+      "recommended_action": "Proceed with caution; review remains rule-based (not LLM judge)"
+    },
+    {
+      "claim": "Paper contributes to the topic: Compressed Sensing: From Research to Clinical Practice with Data-Driven Learning",
+      "related_evidence_ids": [
+        "paper-1903.07824v1"
+      ],
+      "status": "supported",
+      "reason": "Linked evidence present and passes topic relevance checks",
+      "recommended_action": "Proceed with caution; review remains rule-based (not LLM judge)"
+    },
+    {
+      "claim": "Repository evidence is related to: deep learning image compressed sensing",
+      "related_evidence_ids": [
+        "repo-lixing0810-Pytorch_ADMM-CSNet"
+      ],
+      "status": "supported",
+      "reason": "Linked evidence present and passes topic relevance checks",
+      "recommended_action": "Proceed with caution; review remains rule-based (not LLM judge)"
+    }
+  ],
+  "artifact_files_present": {
+    "research_plan.json": true,
+    "paper_evidence.json": true,
+    "paper_matrix.csv": true,
+    "repository_evidence.json": true,
+    "repository_matrix.csv": true,
+    "experiment_plan.md": true,
+    "evidence_review.json": true,
+    "sources.json": true,
+    "research_report.md": true
+  },
+  "manifest": {
+    "task_id": "sf-12fa1e2791cb",
+    "created_at": "2026-10-19T04:10:32.933276+00:00",
+    "data_mode": "live",
+    "overwrite_policy": "replace",
+    "artifacts": [
+      {
+        "artifact_id": "sf-12fa1e2791cb:research_report.md",
+        "artifact_type": "md",
+        "filename": "research_report.md",
+        "path": "E:\\AgentProject\\deepflow_project\\apps\\scholarflow-api\\data\\tasks\\sf-12fa1e2791cb\\artifacts\\research_report.md",
+        "created_at": "2026-10-19T04:10:32.933276+00:00",
+        "data_mode": "live",
+        "schema_valid": null,
+        "schema_error": null,
+        "size_bytes": 5936,
+        "evidence_refs": [
+          "paper-2410.18954v2",
+          "paper-1903.07824v1",
+          "paper-2302.10473v6",
+          "paper-2302.04143v2",
+          "paper-2301.00942v1",
+          "repo-lixing0810-Pytorch_ADMM-CSNet"
+        ]
+      },
+      {
+        "artifact_id": "sf-12fa1e2791cb:research_plan.json",
+        "artifact_type": "json",
+        "filename": "research_plan.json",
+        "path": "E:\\AgentProject\\deepflow_project\\apps\\scholarflow-api\\data\\tasks\\sf-12fa1e2791cb\\artifacts\\research_plan.json",
+        "created_at": "2026-10-19T04:10:32.933276+00:00",
+        "data_mode": "live",
+        "schema_valid": true,
+        "schema_error": null,
+        "size_bytes": 973,
+        "evidence_refs": [
+          "paper-2410.18954v2",
+          "paper-1903.07824v1",
+          "paper-2302.10473v6",
+          "paper-2302.04143v2",
+          "paper-2301.00942v1",
+          "repo-lixing0810-Pytorch_ADMM-CSNet"
+        ]
+      },
+      {
+        "artifact_id": "sf-12fa1e2791cb:paper_evidence.json",
+        "artifact_type": "json",
+        "filename": "paper_evidence.json",
+        "path": "E:\\AgentProject\\deepflow_project\\apps\\scholarflow-api\\data\\tasks\\sf-12fa1e2791cb\\artifacts\\paper_evidence.json",
+        "created_at": "2026-10-19T04:10:32.933276+00:00",
+        "data_mode": "live",
+        "schema_valid": true,
+        "schema_error": null,
+        "size_bytes": 11156,
+        "evidence_refs": [
+          "paper-2410.18954v2",
+          "paper-1903.07824v1",
+          "paper-2302.10473v6",
+          "paper-2302.04143v2",
+          "paper-2301.00942v1",
+          "repo-lixing0810-Pytorch_ADMM-CSNet"
+        ]
+      },
+      {
+        "artifact_id": "sf-12fa1e2791cb:paper_matrix.csv",
+        "artifact_type": "csv",
+        "filename": "paper_matrix.csv",
+        "path": "E:\\AgentProject\\deepflow_project\\apps\\scholarflow-api\\data\\tasks\\sf-12fa1e2791cb\\artifacts\\paper_matrix.csv",
+        "created_at": "2026-10-19T04:10:32.933276+00:00",
+        "data_mode": "live",
+        "schema_valid": null,
+        "schema_error": null,
+        "size_bytes": 8616,
+        "evidence_refs": [
+          "paper-2410.18954v2",
+          "paper-1903.07824v1",
+          "paper-2302.10473v6",
+          "paper-2302.04143v2",
+          "paper-2301.00942v1",
+          "repo-lixing0810-Pytorch_ADMM-CSNet"
+        ]
+      },
+      {
+        "artifact_id": "sf-12fa1e2791cb:repository_evidence.json",
+        "artifact_type": "json",
+        "filename": "repository_evidence.json",
+        "path": "E:\\AgentProject\\deepflow_project\\apps\\scholarflow-api\\data\\tasks\\sf-12fa1e2791cb\\artifacts\\repository_evidence.json",
+        "created_at": "2026-10-19T04:10:32.933276+00:00",
+        "data_mode": "live",
+        "schema_valid": true,
+        "schema_error": null,
+        "size_bytes": 2893,
+        "evidence_refs": [
+          "paper-2410.18954v2",
+          "paper-1903.07824v1",
+          "paper-2302.10473v6",
+          "paper-2302.04143v2",
+          "paper-2301.00942v1",
+          "repo-lixing0810-Pytorch_ADMM-CSNet"
+        ]
+      },
+      {
+        "artifact_id": "sf-12fa1e2791cb:repository_matrix.csv",
+        "artifact_type": "csv",
+        "filename": "repository_matrix.csv",
+        "path": "E:\\AgentProject\\deepflow_project\\apps\\scholarflow-api\\data\\tasks\\sf-12fa1e2791cb\\artifacts\\repository_matrix.csv",
+        "created_at": "2026-10-19T04:10:32.933276+00:00",
+        "data_mode": "live",
+        "schema_valid": null,
+        "schema_error": null,
+        "size_bytes": 2427,
+        "evidence_refs": [
+          "paper-2410.18954v2",
+          "paper-1903.07824v1",
+          "paper-2302.10473v6",
+          "paper-2302.04143v2",
+          "paper-2301.00942v1",
+          "repo-lixing0810-Pytorch_ADMM-CSNet"
+        ]
+      },
+      {
+        "artifact_id": "sf-12fa1e2791cb:experiment_plan.md",
+        "artifact_type": "md",
+        "filename": "experiment_plan.md",
+        "path": "E:\\AgentProject\\deepflow_project\\apps\\scholarflow-api\\data\\tasks\\sf-12fa1e2791cb\\artifacts\\experiment_plan.md",
+        "created_at": "2026-10-19T04:10:32.933276+00:00",
+        "data_mode": "live",
+        "schema_valid": null,
+        "schema_error": null,
+        "size_bytes": 1764,
+        "evidence_refs": [
+          "paper-2410.18954v2",
+          "paper-1903.07824v1",
+          "paper-2302.10473v6",
+          "paper-2302.04143v2",
+          "paper-2301.00942v1",
+          "repo-lixing0810-Pytorch_ADMM-CSNet"
+        ]
+      },
+      {
+        "artifact_id": "sf-12fa1e2791cb:evidence_review.json",
+        "artifact_type": "json",
+        "filename": "evidence_review.json",
+        "path": "E:\\AgentProject\\deepflow_project\\apps\\scholarflow-api\\data\\tasks\\sf-12fa1e2791cb\\artifacts\\evidence_review.json",
+        "created_at": "2026-10-19T04:10:32.933276+00:00",
+        "data_mode": "live",
+        "schema_valid": true,
+        "schema_error": null,
+        "size_bytes": 1674,
+        "evidence_refs": [
+          "paper-2410.18954v2",
+          "paper-1903.07824v1",
+          "paper-2302.10473v6",
+          "paper-2302.04143v2",
+          "paper-2301.00942v1",
+          "repo-lixing0810-Pytorch_ADMM-CSNet"
+        ]
+      },
+      {
+        "artifact_id": "sf-12fa1e2791cb:sources.json",
+        "artifact_type": "json",
+        "filename": "sources.json",
+        "path": "E:\\AgentProject\\deepflow_project\\apps\\scholarflow-api\\data\\tasks\\sf-12fa1e2791cb\\artifacts\\sources.json",
+        "created_at": "2026-10-19T04:10:32.933276+00:00",
+        "data_mode": "live",
+        "schema_valid": true,
+        "schema_error": null,
+        "size_bytes": 1756,
+        "evidence_refs": [
+          "paper-2410.18954v2",
+          "paper-1903.07824v1",
+          "paper-2302.10473v6",
+          "paper-2302.04143v2",
+          "paper-2301.00942v1",
+          "repo-lixing0810-Pytorch_ADMM-CSNet"
+        ]
+      }
+    ]
+  },
+  "consistency": {
+    "ok": true,
+    "issues": []
+  },
+  "events_kinds": [
+    "orchestrator_done",
+    "paper_started",
+    "paper_finished",
+    "repo_started",
+    "repo_finished",
+    "join_gate",
+    "experiment_done",
+    "review_done",
+    "assemble_done"
+  ],
+  "historical_preserved": {
+    "sf-5787ead265f0": "partial_succeeded",
+    "sf-rel-e2e-1792380524": "failed"
+  }
+}

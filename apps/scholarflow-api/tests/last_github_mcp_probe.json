@@ -1,0 +1,49 @@
+{
+  "ts": "2026-10-19T05:12:04.093009+00:00",
+  "steps": {
+    "mcp_get_repository_overview": {
+      "ok": true,
+      "elapsed_s": 7.3,
+      "repository": "jianzhangcs/ISTA-Net-PyTorch",
+      "description": "ISTA-Net: Interpretable Optimization-Inspired Deep Network for Image Compressive Sensing, CVPR2018 (PyTorch Code)",
+      "cs_related": true
+    },
+    "resolve_live_repository": {
+      "ok": true,
+      "elapsed_s": 16.57,
+      "selected": "jianzhangcs/ISTA-Net-PyTorch",
+      "method": "topic_hint+github_search",
+      "search_error": null,
+      "repository": "jianzhangcs/ISTA-Net-PyTorch",
+      "description": "ISTA-Net: Interpretable Optimization-Inspired Deep Network for Image Compressive Sensing, CVPR2018 (PyTorch Code)",
+      "relevance_signals": [
+        "strong_title_terms:1",
+        "title_phrase:compressed/compressive sensing",
+        "accept:repo_cs_markers"
+      ],
+      "relevance_tier": "core"
+    },
+    "papers_live": {
+      "ok": true,
+      "elapsed_s": 2.99,
+      "n": 3,
+      "accepted": 2,
+      "rejected": 1,
+      "titles": [
+        {
+          "title": "ISTA-Net: Interpretable Optimization-Inspired Deep Network for Image Compressive Sensing",
+          "tier": "core"
+        },
+        {
+          "title": "Compressive sensing: a paradigm shift in signal processing",
+          "tier": "core"
+        }
+      ]
+    }
+  },
+  "summary": {
+    "mcp_get_repository_overview": true,
+    "resolve_live_repository": true,
+    "papers_live": true
+  }
+}

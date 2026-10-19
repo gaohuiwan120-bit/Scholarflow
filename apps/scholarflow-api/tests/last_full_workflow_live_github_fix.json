@@ -1,0 +1,288 @@
+{
+  "ts": "2026-10-19T05:14:37.131052+00:00",
+  "task_id": "sf-d4a1cbefb472",
+  "elapsed_s": 20.16,
+  "create": {
+    "task_id": "sf-d4a1cbefb472",
+    "status": "running",
+    "kind": "research_orchestration",
+    "created_at": "2026-10-19T05:14:17.067674Z",
+    "message": "Task queued; poll /api/v1/tasks/{id} for status"
+  },
+  "status_poll": {
+    "task_id": "sf-d4a1cbefb472",
+    "status": "failed",
+    "kind": "research_orchestration",
+    "question": "基于深度学习的图像压缩感知重建：检索相关论文，分析研究问题、核心方法与局限性；查找并分析相关 GitHub 开源实现（参考 jianzhangcs/ISTA-Net），并据此设计实验方案与证据审查。",
+    "created_at": "2026-10-19T05:14:17.067674Z",
+    "updated_at": "2026-10-19T05:14:32.531809Z",
+    "runtime": "research_graph_v1",
+    "error": "No repository evidence; repository_analysis failed — evidence not trustworthy; Empty or failed experiment plan",
+    "progress": "done",
+    "subtasks": [
+      {
+        "subtask_id": "sf-d4a1cbefb472-orchestrator",
+        "role": "orchestrator",
+        "status": "succeeded",
+        "depends_on": [],
+        "started_at": 1792386857.1293666,
+        "ended_at": 1792386857.1293666,
+        "duration_ms": 0,
+        "error": null,
+        "summary": "Planned workflow_mode=research_orchestration",
+        "data_source": "deterministic"
+      },
+      {
+        "subtask_id": "sf-d4a1cbefb472-paper",
+        "role": "paper_research",
+        "status": "succeeded",
+        "depends_on": [],
+        "started_at": 1792386857.1303694,
+        "ended_at": 1792386864.5726922,
+        "duration_ms": 7442,
+        "error": null,
+        "summary": "Collected 4 papers (live_mcp); core=2 supporting=2; query='image compressive sensing deep learning reconstruction'; rejected=8",
+        "data_source": "live_mcp"
+      },
+      {
+        "subtask_id": "sf-d4a1cbefb472-repo",
+        "role": "repository_analysis",
+        "status": "failed",
+        "depends_on": [],
+        "started_at": 1792386857.1303694,
+        "ended_at": 1792386872.5244648,
+        "duration_ms": 15394,
+        "error": "live MCP failed: No relevant repository after search/hints. last_error=get_repository_overview failed: unhandled errors in a TaskGroup (1 sub-exception)",
+        "summary": null,
+        "data_source": "live_mcp"
+      },
+      {
+        "subtask_id": "sf-d4a1cbefb472-experiment",
+        "role": "experiment_design",
+        "status": "failed",
+        "depends_on": [
+          "paper_research",
+          "repository_analysis"
+        ],
+        "started_at": 1792386872.525551,
+        "ended_at": 1792386872.525551,
+        "duration_ms": 0,
+        "error": "Upstream evidence invalid: repository_evidence_invalid_or_missing",
+        "summary": null,
+        "data_source": "none"
+      },
+      {
+        "subtask_id": "sf-d4a1cbefb472-review",
+        "role": "review",
+        "status": "failed",
+        "depends_on": [
+          "experiment_design"
+        ],
+        "started_at": 1792386872.52612,
+        "ended_at": 1792386872.528175,
+        "duration_ms": 2,
+        "error": "No repository evidence; repository_analysis failed — evidence not trustworthy; Empty or failed experiment plan",
+        "summary": "decision=fail; claims=4",
+        "data_source": "deterministic"
+      },
+      {
+        "subtask_id": "sf-d4a1cbefb472-assemble",
+        "role": "assemble",
+        "status": "skipped",
+        "depends_on": [
+          "review"
+        ],
+        "started_at": 1792386872.5286884,
+        "ended_at": 1792386872.5286884,
+        "duration_ms": 0,
+        "error": "Skipped because review failed",
+        "summary": null,
+        "data_source": "none"
+      }
+    ]
+  },
+  "result_summary": {
+    "status": "failed",
+    "overall_status": null,
+    "data_mode": null,
+    "effective_data_mode": null,
+    "review_decision": null,
+    "degradation_events": null,
+    "papers_n": 0,
+    "repos_n": 0,
+    "paper_titles": [],
+    "repo_names": [],
+    "error": "No repository evidence; repository_analysis failed — evidence not trustworthy; Empty or failed experiment plan"
+  },
+  "subtasks": [
+    {
+      "subtask_id": "sf-d4a1cbefb472-orchestrator",
+      "role": "orchestrator",
+      "status": "succeeded",
+      "depends_on": [],
+      "started_at": 1792386857.1293666,
+      "ended_at": 1792386857.1293666,
+      "duration_ms": 0,
+      "error": null,
+      "summary": "Planned workflow_mode=research_orchestration",
+      "data_source": "deterministic"
+    },
+    {
+      "subtask_id": "sf-d4a1cbefb472-paper",
+      "role": "paper_research",
+      "status": "succeeded",
+      "depends_on": [],
+      "started_at": 1792386857.1303694,
+      "ended_at": 1792386864.5726922,
+      "duration_ms": 7442,
+      "error": null,
+      "summary": "Collected 4 papers (live_mcp); core=2 supporting=2; query='image compressive sensing deep learning reconstruction'; rejected=8",
+      "data_source": "live_mcp"
+    },
+    {
+      "subtask_id": "sf-d4a1cbefb472-repo",
+      "role": "repository_analysis",
+      "status": "failed",
+      "depends_on": [],
+      "started_at": 1792386857.1303694,
+      "ended_at": 1792386872.5244648,
+      "duration_ms": 15394,
+      "error": "live MCP failed: No relevant repository after search/hints. last_error=get_repository_overview failed: unhandled errors in a TaskGroup (1 sub-exception)",
+      "summary": null,
+      "data_source": "live_mcp"
+    },
+    {
+      "subtask_id": "sf-d4a1cbefb472-experiment",
+      "role": "experiment_design",
+      "status": "failed",
+      "depends_on": [
+        "paper_research",
+        "repository_analysis"
+      ],
+      "started_at": 1792386872.525551,
+      "ended_at": 1792386872.525551,
+      "duration_ms": 0,
+      "error": "Upstream evidence invalid: repository_evidence_invalid_or_missing",
+      "summary": null,
+      "data_source": "none"
+    },
+    {
+      "subtask_id": "sf-d4a1cbefb472-review",
+      "role": "review",
+      "status": "failed",
+      "depends_on": [
+        "experiment_design"
+      ],
+      "started_at": 1792386872.52612,
+      "ended_at": 1792386872.528175,
+      "duration_ms": 2,
+      "error": "No repository evidence; repository_analysis failed — evidence not trustworthy; Empty or failed experiment plan",
+      "summary": "decision=fail; claims=4",
+      "data_source": "deterministic"
+    },
+    {
+      "subtask_id": "sf-d4a1cbefb472-assemble",
+      "role": "assemble",
+      "status": "skipped",
+      "depends_on": [
+        "review"
+      ],
+      "started_at": 1792386872.5286884,
+      "ended_at": 1792386872.5286884,
+      "duration_ms": 0,
+      "error": "Skipped because review failed",
+      "summary": null,
+      "data_source": "none"
+    }
+  ],
+  "node_records": [],
+  "parallel_evidence": [
+    {
+      "status": "succeeded",
+      "started_at": 1792386857.1293666,
+      "summary": "Planned workflow_mode=research_orchestration",
+      "error": null
+    },
+    {
+      "status": "succeeded",
+      "started_at": 1792386857.1303694,
+      "summary": "Collected 4 papers (live_mcp); core=2 supporting=2; query='image compressive sensing deep learning reconstruction'; rejected=8",
+      "error": null
+    },
+    {
+      "status": "failed",
+      "started_at": 1792386857.1303694,
+      "summary": null,
+      "error": "live MCP failed: No relevant repository after search/hints. last_error=get_repository_overview failed: unhandled errors in a TaskGroup (1 sub-exception)"
+    },
+    {
+      "status": "failed",
+      "started_at": 1792386872.525551,
+      "summary": null,
+      "error": "Upstream evidence invalid: repository_evidence_invalid_or_missing"
+    },
+    {
+      "status": "failed",
+      "started_at": 1792386872.52612,
+      "summary": "decision=fail; claims=4",
+      "error": "No repository evidence; repository_analysis failed — evidence not trustworthy; Empty or failed experiment plan"
+    },
+    {
+      "status": "skipped",
+      "started_at": 1792386872.5286884,
+      "summary": null,
+      "error": "Skipped because review failed"
+    }
+  ],
+  "artifacts_api": {
+    "error": "HTTP Error 404: Not Found"
+  },
+  "artifacts_content": {
+    "research_report.md": {
+      "exists": false
+    },
+    "research_plan.json": {
+      "exists": false
+    },
+    "paper_evidence.json": {
+      "exists": false
+    },
+    "paper_matrix.csv": {
+      "exists": false
+    },
+    "repository_evidence.json": {
+      "exists": false
+    },
+    "repository_matrix.csv": {
+      "exists": false
+    },
+    "experiment_plan.md": {
+      "exists": false
+    },
+    "evidence_review.json": {
+      "exists": false
+    },
+    "sources.json": {
+      "exists": false
+    }
+  },
+  "state_status": "failed",
+  "state_keys": [
+    "artifacts",
+    "created_at",
+    "duration_ms",
+    "error",
+    "index_info",
+    "kind",
+    "params",
+    "progress",
+    "question",
+    "research",
+    "result",
+    "runtime",
+    "status",
+    "subtasks",
+    "task_id",
+    "updated_at"
+  ]
+}

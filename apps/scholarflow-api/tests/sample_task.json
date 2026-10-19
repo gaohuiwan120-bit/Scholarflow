@@ -1,0 +1,8 @@
+{
+  "kind": "rag_query",
+  "question": "Blended RAG hybrid dense sparse vs Naive RAG",
+  "top_k": 5,
+  "ensure_index": true,
+  "force_reindex": false,
+  "verified_only": false
+}

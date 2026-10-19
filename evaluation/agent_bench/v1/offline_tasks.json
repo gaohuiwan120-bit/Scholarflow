@@ -1,0 +1,318 @@
+{
+  "version": "agent-bench-v1",
+  "suite": "offline",
+  "description": "20 offline Agent tasks via ScholarFlow FastAPI / public RAG pipeline (fixture, no live network)",
+  "tasks": [
+    {
+      "id": "off-01",
+      "title": "Paper research evidence extraction",
+      "entry": "api_task",
+      "kind": "paper_research",
+      "data_mode": "fixture",
+      "input": {
+        "question": "Blended RAG hybrid dense sparse vs Naive RAG",
+        "persist_artifacts": true
+      },
+      "expect_outcome": "succeeded",
+      "expect_artifacts": "research_pack",
+      "assertions": ["status_succeeded_or_partial", "has_papers", "runtime_research"],
+      "tags": ["paper", "evidence"]
+    },
+    {
+      "id": "off-02",
+      "title": "GitHub repository analysis",
+      "entry": "api_task",
+      "kind": "repository_analysis",
+      "data_mode": "fixture",
+      "input": {
+        "question": "Blended RAG open-source implementations",
+        "persist_artifacts": true
+      },
+      "expect_outcome": "succeeded",
+      "expect_artifacts": "research_pack",
+      "assertions": ["status_succeeded_or_partial", "has_repos", "runtime_research"],
+      "tags": ["repo", "evidence"]
+    },
+    {
+      "id": "off-03",
+      "title": "Experiment design consumes upstream evidence",
+      "entry": "api_task",
+      "kind": "experiment_design",
+      "data_mode": "fixture",
+      "input": {
+        "question": "Design experiment for hybrid RAG vs Naive RAG",
+        "persist_artifacts": true
+      },
+      "expect_outcome": "succeeded",
+      "expect_artifacts": "research_pack",
+      "assertions": ["status_succeeded_or_partial", "experiment_upstream_ids"],
+      "tags": ["experiment", "dependency"]
+    },
+    {
+      "id": "off-04",
+      "title": "Multi-agent research orchestration",
+      "entry": "api_task",
+      "kind": "research_orchestration",
+      "data_mode": "fixture",
+      "input": {
+        "question": "Blended RAG hybrid dense sparse vs Naive RAG",
+        "persist_artifacts": true
+      },
+      "expect_outcome": "succeeded",
+      "expect_artifacts": "nine",
+      "assertions": ["status_succeeded_or_partial", "roles_orchestration", "artifact_count_9"],
+      "tags": ["orchestration"]
+    },
+    {
+      "id": "off-05",
+      "title": "Subtask dependency scheduling",
+      "entry": "api_task",
+      "kind": "research_orchestration",
+      "data_mode": "fixture",
+      "input": {
+        "question": "RAG survey dependency check",
+        "persist_artifacts": true
+      },
+      "expect_outcome": "succeeded",
+      "expect_artifacts": "nine",
+      "assertions": ["status_succeeded_or_partial", "subtask_depends_on"],
+      "tags": ["dependency"]
+    },
+    {
+      "id": "off-06",
+      "title": "Parallel paper and repo execution",
+      "entry": "api_task",
+      "kind": "research_orchestration",
+      "data_mode": "fixture",
+      "input": {
+        "question": "Parallel RAG survey",
+        "simulate_work_seconds": 0.45,
+        "persist_artifacts": true
+      },
+      "expect_outcome": "succeeded",
+      "expect_artifacts": "nine",
+      "assertions": ["status_succeeded_or_partial", "paper_repo_parallel_overlap"],
+      "tags": ["parallel"]
+    },
+    {
+      "id": "off-07",
+      "title": "MCP tools list schema",
+      "entry": "api_mcp_tools",
+      "kind": null,
+      "data_mode": "fixture",
+      "input": {},
+      "expect_outcome": "succeeded",
+      "expect_artifacts": "none",
+      "assertions": ["mcp_tools_schema"],
+      "tags": ["mcp"]
+    },
+    {
+      "id": "off-08",
+      "title": "Paper node failure propagation",
+      "entry": "api_task",
+      "kind": "research_orchestration",
+      "data_mode": "fixture",
+      "input": {
+        "question": "force fail paper path",
+        "force_fail_paper": true,
+        "persist_artifacts": true
+      },
+      "expect_outcome": "failed",
+      "expect_artifacts": "none_or_partial",
+      "assertions": ["status_failed", "paper_subtask_failed"],
+      "tags": ["failure", "mcp"]
+    },
+    {
+      "id": "off-09",
+      "title": "Pydantic schema validity on artifacts",
+      "entry": "api_task",
+      "kind": "research_orchestration",
+      "data_mode": "fixture",
+      "input": {
+        "question": "Schema validity RAG survey",
+        "persist_artifacts": true
+      },
+      "expect_outcome": "succeeded",
+      "expect_artifacts": "nine",
+      "assertions": ["status_succeeded_or_partial", "schema_all_json"],
+      "tags": ["schema"]
+    },
+    {
+      "id": "off-10",
+      "title": "Nine research artifacts completeness",
+      "entry": "api_task",
+      "kind": "research_orchestration",
+      "data_mode": "fixture",
+      "input": {
+        "question": "Nine artifacts RAG survey",
+        "persist_artifacts": true
+      },
+      "expect_outcome": "succeeded",
+      "expect_artifacts": "nine",
+      "assertions": ["status_succeeded_or_partial", "artifact_count_9", "nine_files_present"],
+      "tags": ["artifacts"]
+    },
+    {
+      "id": "off-11",
+      "title": "JSON CSV Markdown format checks",
+      "entry": "api_task",
+      "kind": "research_orchestration",
+      "data_mode": "fixture",
+      "input": {
+        "question": "Format parseability RAG survey",
+        "persist_artifacts": true
+      },
+      "expect_outcome": "succeeded",
+      "expect_artifacts": "nine",
+      "assertions": ["status_succeeded_or_partial", "format_parseability"],
+      "tags": ["format"]
+    },
+    {
+      "id": "off-12",
+      "title": "evidence_id and source_url traceability",
+      "entry": "api_task",
+      "kind": "research_orchestration",
+      "data_mode": "fixture",
+      "input": {
+        "question": "Source traceability RAG survey",
+        "persist_artifacts": true
+      },
+      "expect_outcome": "succeeded",
+      "expect_artifacts": "nine",
+      "assertions": ["status_succeeded_or_partial", "source_traceability"],
+      "tags": ["traceability"]
+    },
+    {
+      "id": "off-13",
+      "title": "RAG retrieval via API",
+      "entry": "api_task",
+      "kind": "rag_query",
+      "data_mode": "fixture",
+      "input": {
+        "question": "Blended RAG hybrid dense sparse vs Naive RAG",
+        "ensure_index": true,
+        "top_k": 5
+      },
+      "expect_outcome": "succeeded",
+      "expect_artifacts": "none",
+      "assertions": ["status_succeeded", "rag_has_evidence"],
+      "tags": ["rag"]
+    },
+    {
+      "id": "off-14",
+      "title": "Cross-Encoder / stub rerank backend recorded",
+      "entry": "api_task",
+      "kind": "rag_query",
+      "data_mode": "fixture",
+      "input": {
+        "question": "Blended RAG hybrid dense sparse vs Naive RAG",
+        "ensure_index": true,
+        "rerank_model": "stub-cross-encoder",
+        "top_k": 5
+      },
+      "expect_outcome": "succeeded",
+      "expect_artifacts": "none",
+      "assertions": ["status_succeeded", "rag_rerank_backend_recorded"],
+      "tags": ["rag", "cross-encoder"]
+    },
+    {
+      "id": "off-15",
+      "title": "Insufficient evidence triggers MCP fallback signal",
+      "entry": "api_task",
+      "kind": "rag_query",
+      "data_mode": "fixture",
+      "input": {
+        "question": "zzzxqyx nonexistent quantum banana ontology 99999",
+        "ensure_index": true,
+        "enable_mcp_fallback": true,
+        "top_k": 5
+      },
+      "expect_outcome": "correct_refuse",
+      "expect_artifacts": "none",
+      "assertions": ["rag_need_mcp_fallback"],
+      "tags": ["rag", "fallback"]
+    },
+    {
+      "id": "off-16",
+      "title": "MCP supplement max rounds correct refuse",
+      "entry": "rag_pipeline_mock_mcp",
+      "kind": null,
+      "data_mode": "fixture",
+      "input": {
+        "question": "zzzxqyx nonexistent quantum banana ontology 99999",
+        "max_rounds": 2
+      },
+      "expect_outcome": "correct_refuse",
+      "expect_artifacts": "none",
+      "assertions": ["rag_max_rounds_refuse"],
+      "tags": ["rag", "fallback", "refuse"]
+    },
+    {
+      "id": "off-17",
+      "title": "Sufficient evidence normal answer",
+      "entry": "api_task",
+      "kind": "rag_query",
+      "data_mode": "fixture",
+      "input": {
+        "question": "Blended RAG hybrid dense sparse vs Naive RAG",
+        "ensure_index": true,
+        "top_k": 5
+      },
+      "expect_outcome": "succeeded",
+      "expect_artifacts": "none",
+      "assertions": ["status_succeeded", "rag_normal_answer"],
+      "tags": ["rag"]
+    },
+    {
+      "id": "off-18",
+      "title": "Sandbox normal execution",
+      "entry": "api_sandbox",
+      "kind": null,
+      "data_mode": "fixture",
+      "input": {
+        "task_id": "bench-sb-ok",
+        "code": "print(40+2)\n",
+        "prefer_docker": false,
+        "timeout_seconds": 5
+      },
+      "expect_outcome": "succeeded",
+      "expect_artifacts": "none",
+      "assertions": ["sandbox_succeeded"],
+      "tags": ["sandbox"]
+    },
+    {
+      "id": "off-19",
+      "title": "Sandbox timeout or policy reject",
+      "entry": "api_sandbox",
+      "kind": null,
+      "data_mode": "fixture",
+      "input": {
+        "task_id": "bench-sb-to",
+        "code": "import time\ntime.sleep(20)\n",
+        "prefer_docker": false,
+        "timeout_seconds": 1
+      },
+      "expect_outcome": "succeeded",
+      "expect_artifacts": "none",
+      "assertions": ["sandbox_timed_out_or_rejected"],
+      "allowed_failures": [],
+      "tags": ["sandbox", "policy"]
+    },
+    {
+      "id": "off-20",
+      "title": "Review failure status consistency",
+      "entry": "api_task",
+      "kind": "research_orchestration",
+      "data_mode": "fixture",
+      "input": {
+        "question": "force fail review",
+        "force_fail_review": true,
+        "persist_artifacts": true
+      },
+      "expect_outcome": "failed",
+      "expect_artifacts": "none_or_partial",
+      "assertions": ["status_failed", "assemble_not_fake_success"],
+      "tags": ["failure", "consistency"]
+    }
+  ]
+}

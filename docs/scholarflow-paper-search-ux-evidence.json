@@ -1,0 +1,225 @@
+{
+  "tested_at": "2026-10-18T15:20:30.281298+00:00",
+  "broad": {
+    "query": "compressed sensing",
+    "candidates_fetched": 20,
+    "raw_top_titles": [
+      "Learning Structured Compressed Sensing with Automatic Resource Allocation",
+      "Compressed Sensing: From Research to Clinical Practice with Data-Driven Learning",
+      "Quantization and Compressive Sensing",
+      "Hierarchical compressed sensing",
+      "The quest for optimal sampling: Computationally efficient, structure-exploiting measuremen"
+    ],
+    "reranked_top_titles": [
+      "Learning Structured Compressed Sensing with Automatic Resource Allocation",
+      "Hierarchical compressed sensing",
+      "AdaBoost and robust one-bit compressed sensing",
+      "Compressed Sensing: From Research to Clinical Practice with Data-Driven Learning",
+      "Model-Based Photoacoustic Image Reconstruction using Compressed Sensing and Smoothed L0 No"
+    ],
+    "order_changed": true,
+    "url_ok": true,
+    "ids_ok": true,
+    "tool_ok": true,
+    "tool_count": 5,
+    "sample": [
+      {
+        "evidence_id": "paper-2410.18954v2",
+        "identifier": "2410.18954v2",
+        "title": "Learning Structured Compressed Sensing with Automatic Resource Allocation",
+        "authors": [
+          "Han Wang",
+          "Eduardo Pérez",
+          "Iris A. M. Huijben",
+          "Hans van Gorp",
+          "Ruud van Sloun",
+          "Florian Römer"
+        ],
+        "year": 2024,
+        "source_url": "https://arxiv.org/abs/2410.18954v2",
+        "abstract": "Multidimensional data acquisition often requires extensive time and poses significant challenges for hardware and software regarding data storage and processing. Rather than designing a single compression matrix as in conventional compressed sensing, structured compressed sensing yields dimension-specific compression matrices, reducing the number of optimizable parameters. Recent advances in machine learning (ML) have enabled task-based supervised learning of subsampling matrices, albeit at the ",
+        "research_problem": "Multidimensional data acquisition often requires extensive time and poses significant challenges for hardware and software regarding data storage and processing. Rather than designing a single compression matrix as in conventional compressed sensing, structured compressed sensing yields dimension-sp",
+        "kind_hint": null,
+        "relevance_score": 13.95,
+        "relevance_signals": [
+          "title_phrase:compressed sensing",
+          "strong_title_terms:2",
+          "title_phrase:compressed/compressive sensing"
+        ]
+      },
+      {
+        "evidence_id": "paper-2104.02721v2",
+        "identifier": "2104.02721v2",
+        "title": "Hierarchical compressed sensing",
+        "authors": [
+          "Jens Eisert",
+          "Axel Flinth",
+          "Benedikt Groß",
+          "Ingo Roth",
+          "Gerhard Wunder"
+        ],
+        "year": 2021,
+        "source_url": "https://arxiv.org/abs/2104.02721v2",
+        "abstract": "Compressed sensing is a paradigm within signal processing that provides the means for recovering structured signals from linear measurements in a highly efficient manner. Originally devised for the recovery of sparse signals, it has become clear that a similar methodology would also carry over to a wealth of other classes of structured signals. In this work, we provide an overview over the theory of compressed sensing for a particularly rich family of such signals, namely those of hierarchically",
+        "research_problem": "Compressed sensing is a paradigm within signal processing that provides the means for recovering structured signals from linear measurements in a highly efficient manner. Originally devised for the recovery of sparse signals, it has become clear that a similar methodology would also carry over to a ",
+        "kind_hint": null,
+        "relevance_score": 13.8,
+        "relevance_signals": [
+          "title_phrase:compressed sensing",
+          "strong_title_terms:2",
+          "title_phrase:compressed/compressive sensing"
+        ]
+      },
+      {
+        "evidence_id": "paper-2105.02083v4",
+        "identifier": "2105.02083v4",
+        "title": "AdaBoost and robust one-bit compressed sensing",
+        "authors": [
+          "Geoffrey Chinot",
+          "Felix Kuchelmeister",
+          "Matthias Löffler",
+          "Sara van de Geer"
+        ],
+        "year": 2021,
+        "source_url": "https://arxiv.org/abs/2105.02083v4",
+        "abstract": "This paper studies binary classification in robust one-bit compressed sensing with adversarial errors. It is assumed that the model is overparameterized and that the parameter of interest is effectively sparse. AdaBoost is considered, and, through its relation to the max-$\\ell_1$-margin-classifier, prediction error bounds are derived. The developed theory is general and allows for heavy-tailed feature distributions, requiring only a weak moment assumption and an anti-concentration condition. Imp",
+        "research_problem": "This paper studies binary classification in robust one-bit compressed sensing with adversarial errors. It is assumed that the model is overparameterized and that the parameter of interest is effectively sparse. AdaBoost is considered, and, through its relation to the max-$\\ell_1$-margin-classifier, ",
+        "kind_hint": null,
+        "relevance_score": 13.8,
+        "relevance_signals": [
+          "title_phrase:compressed sensing",
+          "strong_title_terms:2",
+          "title_phrase:compressed/compressive sensing"
+        ]
+      }
+    ]
+  },
+  "focused": {
+    "query": "deep learning compressed sensing image reconstruction",
+    "candidates_fetched": 20,
+    "raw_top_titles": [
+      "Physics-informed self-supervised deep learning reconstruction for accelerated first-pass p",
+      "Learning Structured Compressed Sensing with Automatic Resource Allocation",
+      "Learn to Accumulate Evidence from All Training Samples: Theory and Practice",
+      "Compressed Sensing: From Research to Clinical Practice with Data-Driven Learning",
+      "The Modern Mathematics of Deep Learning"
+    ],
+    "reranked_top_titles": [
+      "Learning Structured Compressed Sensing with Automatic Resource Allocation",
+      "Model-Based Photoacoustic Image Reconstruction using Compressed Sensing and Smoothed L0 No",
+      "Compressed Sensing, ASBSR-method of image sampling and reconstruction and the problem of d",
+      "High Speed Compressed Sensing Reconstruction in Dynamic Parallel MRI Using Augmented Lagra",
+      "Single-Pixel Image Reconstruction Based on Block Compressive Sensing and Deep Learning"
+    ],
+    "order_changed": true,
+    "url_ok": true,
+    "ids_ok": true,
+    "tool_ok": true,
+    "tool_count": 5,
+    "sample": [
+      {
+        "evidence_id": "paper-2410.18954v2",
+        "identifier": "2410.18954v2",
+        "title": "Learning Structured Compressed Sensing with Automatic Resource Allocation",
+        "authors": [
+          "Han Wang",
+          "Eduardo Pérez",
+          "Iris A. M. Huijben",
+          "Hans van Gorp",
+          "Ruud van Sloun",
+          "Florian Römer"
+        ],
+        "year": 2024,
+        "source_url": "https://arxiv.org/abs/2410.18954v2",
+        "abstract": "Multidimensional data acquisition often requires extensive time and poses significant challenges for hardware and software regarding data storage and processing. Rather than designing a single compression matrix as in conventional compressed sensing, structured compressed sensing yields dimension-specific compression matrices, reducing the number of optimizable parameters. Recent advances in machine learning (ML) have enabled task-based supervised learning of subsampling matrices, albeit at the ",
+        "research_problem": "Multidimensional data acquisition often requires extensive time and poses significant challenges for hardware and software regarding data storage and processing. Rather than designing a single compression matrix as in conventional compressed sensing, structured compressed sensing yields dimension-sp",
+        "kind_hint": null,
+        "relevance_score": 14.25,
+        "relevance_signals": [
+          "title_phrase:compressed sensing",
+          "strong_title_terms:2",
+          "title_phrase:compressed/compressive sensing"
+        ]
+      },
+      {
+        "evidence_id": "paper-1802.09313v1",
+        "identifier": "1802.09313v1",
+        "title": "Model-Based Photoacoustic Image Reconstruction using Compressed Sensing and Smoothed L0 Norm",
+        "authors": [
+          "Moein Mozaffarzadeh",
+          "Ali Mahloojifar",
+          "Mohammadreza Nasiriavanaki",
+          "Mahdi Orooji"
+        ],
+        "year": 2018,
+        "source_url": "https://arxiv.org/abs/1802.09313v1",
+        "abstract": "Photoacoustic imaging (PAI) is a novel medical imaging modality that uses the advantages of the spatial resolution of ultrasound imaging and the high contrast of pure optical imaging. Analytical algorithms are usually employed to reconstruct the photoacoustic (PA) images as a result of their simple implementation. However, they provide a low accurate image. Model-based (MB) algorithms are used to improve the image quality and accuracy while a large number of transducers and data acquisition are ",
+        "research_problem": "Photoacoustic imaging (PAI) is a novel medical imaging modality that uses the advantages of the spatial resolution of ultrasound imaging and the high contrast of pure optical imaging. Analytical algorithms are usually employed to reconstruct the photoacoustic (PA) images as a result of their simple ",
+        "kind_hint": null,
+        "relevance_score": 14.25,
+        "relevance_signals": [
+          "title_phrase:compressed sensing",
+          "strong_title_terms:2",
+          "title_phrase:compressed/compressive sensing"
+        ]
+      },
+      {
+        "evidence_id": "paper-1710.05985v2",
+        "identifier": "1710.05985v2",
+        "title": "Compressed Sensing, ASBSR-method of image sampling and reconstruction and the problem of digital image acquisition with the lowest possible sampling rate",
+        "authors": [
+          "Leonid P. Yaroslavsky"
+        ],
+        "year": 2017,
+        "source_url": "https://arxiv.org/abs/1710.05985v2",
+        "abstract": "The problem of minimization of the number of measurements needed for digital image acquisition and reconstruction with a given accuracy is addressed. Basics of the sampling theory are outlined to show that the lower bound of signal sampling rate sufficient for signal reconstruction with a given accuracy is equal to the spectrum sparsity of the signal sparse approximation that has this accuracy. It is revealed that the compressed sensing approach, which was advanced as a solution to the sampling ",
+        "research_problem": "The problem of minimization of the number of measurements needed for digital image acquisition and reconstruction with a given accuracy is addressed. Basics of the sampling theory are outlined to show that the lower bound of signal sampling rate sufficient for signal reconstruction with a given accu",
+        "kind_hint": null,
+        "relevance_score": 14.2,
+        "relevance_signals": [
+          "title_phrase:compressed sensing",
+          "strong_title_terms:2",
+          "title_phrase:compressed/compressive sensing"
+        ]
+      }
+    ]
+  },
+  "live_agent": {
+    "conversation_id": "cv-583b24b42115",
+    "sse_events_head": [
+      "turn_start",
+      "tool_start",
+      "tool_end",
+      "token",
+      "token",
+      "token",
+      "token",
+      "token"
+    ],
+    "tool_start_present": true,
+    "done_status": "completed",
+    "evidence_count": 6,
+    "evidence_ids": [
+      "paper-2410.18954v2",
+      "paper-2104.02721v2",
+      "paper-2105.02083v4",
+      "paper-1903.07824v1",
+      "paper-1802.09313v1",
+      "paper-1403.6540v2"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2410.18954v2",
+      "https://arxiv.org/abs/2104.02721v2",
+      "https://arxiv.org/abs/2105.02083v4",
+      "https://arxiv.org/abs/1903.07824v1",
+      "https://arxiv.org/abs/1802.09313v1",
+      "https://arxiv.org/abs/1403.6540v2"
+    ],
+    "urls_are_bare_https": true,
+    "answer_excerpt": "我用 search_papers 检索了 “compressed sensing survey”（数据来自 arXiv MCP 实时检索，共取回 24 篇候选，再按标题和摘要相关性重排，返回 6 篇）：\n\n1. **Learning Structured Compressed Sensing with Automatic Resource Allocation**（2024）\n   Han Wang, Eduardo Pérez, Iris A. M. Huijben, Hans van Gorp, Ruud van Sloun, Florian Römer\n   多维数据采集耗时且存储/处理负担大；该文用结构化压缩感知为各维度分别设计压缩矩阵以减少可优化参数，并借助机器学习进行任务驱动的子采样矩阵学习。\n   https://arxiv.org/abs/2410.18954v2\n   e"
+  },
+  "claims": {
+    "relevance_improved_vs_raw_arxiv_order": true,
+    "note": "order_changed only means re-rank altered top-N vs arXiv order; it is NOT a human relevance gold-label claim."
+  }
+}
